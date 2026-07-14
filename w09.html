@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>W9 · Financing Health Care &amp; the NHI｜醫務管理</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="index.html">Healthcare Management · 醫務管理</a>
+    <nav>
+      <a href="index.html">Home 首頁</a>
+      <a href="#s1">1 Insurance</a>
+      <a href="#s2">2 Calculator</a>
+      <a href="#s3">3 Paying Doctors</a>
+      <a href="#s4">4 Taiwan NHI</a>
+      <a href="#s5">5 Quiz</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="eyebrow">Week 9 · Module 3 品質・財務・法規</div>
+    <h1>Financing Health Care &amp; the NHI</h1>
+    <p class="h1-zh">醫療財務與全民健保</p>
+    <div class="bi">
+      <p class="en lead">Every management decision eventually meets a payment system — and payment systems change behavior more reliably than any memo. This week: how insurance works (and fails), a calculator that makes deductibles and coinsurance finally click, how each way of paying physicians warps incentives, and a manager's tour of Taiwan's single-payer NHI: global budgets, TW-DRGs, and the deficits everyone argues about.</p>
+      <p class="zh">每個管理決策最終都會撞上支付制度——而支付制度改變行為的力量，比任何公文都可靠。本週內容：保險如何運作（又如何失靈）、一台讓自負額與部分負擔終於「有感」的計算機、各種醫師支付方式如何扭曲誘因，以及管理者視角的台灣單一保險人健保：總額預算、TW-DRG，與人人都在吵的財務失衡。</p>
+    </div>
+    <div class="chips">
+      <span class="chip">Insurance mechanics 保險原理</span>
+      <span class="chip">Moral hazard vs adverse selection 道德風險 vs 逆選擇</span>
+      <span class="chip">Provider payment incentives 支付誘因</span>
+      <span class="chip">Taiwan NHI deep dive 健保深讀</span>
+    </div>
+    <p class="meta">Texts: <b>Buchbinder Ch. on financing · Healey · 黃維民《衛生行政與健康保險》</b> | Time: <b>3 hours</b> | Quiz: self-check only</p>
+  </section>
+
+  <!-- ============ 1 ============ -->
+  <section class="unit" id="s1">
+    <div class="sec-label"><span class="sec-num">§1</span><div><h2>How Insurance Works — and Its Two Demons</h2><p class="h2-zh">保險怎麼運作——與它的兩隻惡魔</p></div></div>
+    <div class="bi">
+      <p class="en"><b>Insurance</b> transfers risk to an insurer in exchange for a <b>premium</b>. The insurer runs a <b>risk assessment (underwriting)</b> to estimate probability and dollar value of losses, adds a <b>loading cost</b> (overhead + profit), and prices the contract. Risk can be spread by <b>community rating</b> (everyone pays the same premium regardless of health) or <b>group rating</b> (premium reflects an employer group's risk — younger workforce, cheaper premium).</p>
+      <p class="zh"><b>保險</b>是把風險移轉給保險人、換取<b>保費</b>。保險人執行<b>風險評估（核保）</b>估計損失的機率與金額，加上<b>附加費用</b>（營運＋利潤）後訂價。分散風險有兩種費率：<b>社區費率</b>（不論健康狀況、人人同價）與<b>團體費率</b>（依雇主團體風險訂價——員工越年輕保費越低）。</p>
+    </div>
+    <div class="cards2">
+      <div class="card"><h4>Moral hazard 道德風險</h4><ul><li>Once costs are borne by someone else, people take more risks / use more care<span class="zh">成本由他人承擔後，人會更冒險、用更多醫療</span></li><li>Occurs <b>after</b> insurance is bought 發生在投保「之後」</li></ul></div>
+      <div class="card"><h4>Adverse selection 逆選擇</h4><ul><li>The sickest are the most eager to buy insurance — the pool fills with high-risk members and can bankrupt the insurer<span class="zh">最可能用到保險的人最想投保——保險池充滿高風險者，可能拖垮保險公司</span></li><li>Occurs <b>before/at</b> enrollment 發生在投保「當下之前」</li></ul></div>
+    </div>
+    <div class="bi">
+      <p class="en">Classify each situation:</p>
+      <p class="zh">分類下列情境：</p>
+    </div>
+    <div id="mhSorter"></div>
+  </section>
+
+  <!-- ============ 2 ============ -->
+  <section class="unit" id="s2">
+    <div class="sec-label"><span class="sec-num">§2</span><div><h2>Cost-Sharing Calculator</h2><p class="h2-zh">部分負擔計算機</p></div></div>
+    <div class="bi">
+      <p class="en">Insurers push part of each bill back to the patient — precisely to fight moral hazard. Three levers: <b>copayment</b> (fixed amount per visit), <b>deductible</b> (you pay everything until a yearly threshold), and <b>coinsurance</b> (you pay a percentage of what remains). Move the numbers and watch who pays what.</p>
+      <p class="zh">保險人把帳單的一部分推回給病人——正是為了對抗道德風險。三個槓桿：<b>定額負擔</b>（每次就醫固定金額）、<b>自負額</b>（年度門檻內全自付）、<b>定率負擔</b>（其餘金額按比例分攤）。調整數字，看誰付多少。</p>
+    </div>
+    <div class="widget">
+      <div class="widget-row">
+        <label>Medical bill 醫療費用 $ <input type="number" id="ccBill" value="20000" min="0" step="500"></label>
+        <label>Copay 定額負擔 $ <input type="number" id="ccCopay" value="500" min="0" step="100"></label>
+      </div>
+      <div class="widget-row">
+        <label>Deductible remaining 未達自負額 $ <input type="number" id="ccDed" value="5000" min="0" step="500"></label>
+        <label>Coinsurance 定率 % <input type="number" id="ccCoin" value="20" min="0" max="100" step="5"></label>
+      </div>
+      <div class="split-bar" id="ccBar"><div class="seg pt" id="ccSegP" style="width:50%">Patient</div><div class="seg ins" id="ccSegI" style="width:50%">Insurer</div></div>
+      <div class="legend-row">
+        <span><span class="sw" style="background:var(--warn)"></span>Patient pays 病人自付</span>
+        <span><span class="sw" style="background:var(--accent)"></span>Insurer pays 保險給付</span>
+      </div>
+      <div class="result-strip">
+        <div class="result-cell"><div class="rc-l">PATIENT 病人</div><div class="rc-v" id="ccPat">—</div></div>
+        <div class="result-cell"><div class="rc-l">INSURER 保險人</div><div class="rc-v" id="ccIns">—</div></div>
+        <div class="result-cell"><div class="rc-l">PATIENT SHARE 自付比</div><div class="rc-v" id="ccPct">—</div></div>
+      </div>
+      <p class="note" id="ccNote" style="margin:10px 0 0"></p>
+    </div>
+    <div class="callout info"><span class="mark">Taiwan note<br>台灣對照</span><span>
+      Taiwan's NHI relies mainly on fixed <b>copayments</b> (定額) with caps and exemptions — not deductibles. The 2023 copay reform raised drug and ER copays at large hospitals partly to redirect mild cases to clinics: cost-sharing as a <i>referral policy tool</i>.
+      <span class="zh">台灣健保主要採「定額」部分負擔（含上限與免除），沒有自負額制。112 年部分負擔新制調高大醫院藥品與急診負擔，用意之一是把輕症導回基層：部分負擔也是分級醫療的政策工具。</span>
+    </span></div>
+  </section>
+
+  <!-- ============ 3 ============ -->
+  <section class="unit" id="s3">
+    <div class="sec-label"><span class="sec-num">§3</span><div><h2>How You Pay Doctors Is What You Get</h2><p class="h2-zh">怎麼付錢給醫師，就得到什麼醫療</p></div></div>
+    <div class="bi">
+      <p class="en">Because of <b>information asymmetry</b>, physicians can shift patient demand — <b>supplier-induced demand (SID)</b> — and third-party payment removes the patient's price restraint. So the payment method becomes the steering wheel. <b>RBRVS</b> (adopted by U.S. Medicare in 1992, and used in Taiwan's fee schedule) prices each service by the resources it takes: physician work + practice expense + liability insurance. Click each payment system to see the incentives it creates:</p>
+      <p class="zh">由於<b>資訊不對稱</b>，醫師能左右病人的需求——<b>供給者誘發需求（SID）</b>——而第三方支付又拿掉了病人的價格自制。於是「支付方式」成了方向盤。<b>RBRVS</b>（美國 Medicare 1992 年採用，台灣支付標準亦引進）按資源成本為每項服務訂價：醫師工作＋執業成本＋醫責保險。點選各支付制度，看它創造的誘因：</p>
+    </div>
+    <div class="filemap" id="payMap">
+      <button class="filebox" data-note="<b>Fee-for-service (FFS) 論量計酬</b> — a payment per service; more services = more revenue. <b>Incentives:</b> productivity and access 🟢, but over-provision, protection of costly procedures, blocked innovation, rising hospital costs 🔴 (Christensen's three distortions). Taiwan's outpatient backbone — hence 'reasonable outpatient volume' policies.<span class='zh'>按服務項目給付；做越多收越多。誘因：產能與可近性 🟢；但過度提供、保護高價處置、阻礙創新、推升成本 🔴（Christensen 三大扭曲）。台灣門診主幹——因此才有「合理門診量」政策。</span>"><span class="fb-code">FFS</span><span class="fb-name">論量計酬</span><span class="fb-en">per service</span></button>
+      <button class="filebox" data-note="<b>Capitation 論人計酬</b> — a payment per enrolled patient per month, whether or not they visit. <b>Incentives:</b> prevention and cost-consciousness 🟢; but under-provision and risk-selection of healthy patients 🔴. Requires risk adjustment.<span class='zh'>按登錄人頭每月給付，不論是否就醫。誘因：預防與成本意識 🟢；但可能服務不足、挑健康病人 🔴。需要風險校正配套。</span>"><span class="fb-code">CAP</span><span class="fb-name">論人計酬</span><span class="fb-en">per person / month</span></button>
+      <button class="filebox" data-note="<b>Salary 薪俸制</b> — a fixed payment per period, independent of volume. <b>Incentives:</b> no reason to over-treat, teamwork-friendly 🟢; but no reward for extra effort — possible under-work and queues 🔴. Common in public and staff-model systems.<span class='zh'>固定週期薪資，與服務量無關。誘因：不會過度醫療、利於團隊 🟢；但多做不多得——可能少做、排隊 🔴。常見於公立與受僱體系。</span>"><span class="fb-code">SAL</span><span class="fb-name">薪俸制</span><span class="fb-en">fixed pay</span></button>
+      <button class="filebox" data-note="<b>Global budget 總額預算</b> — payer and providers negotiate a fixed total for a sector and period, distributed top-down (by organization or service category). Two designs: expenditure <i>target</i> (price×volume growth allowed) vs expenditure <i>cap</i> (annual total fixed). <b>Incentives:</b> macro cost control 🟢; but every provider competes for shares of a fixed pie — point-value dilution in Taiwan's system 🔴.<span class='zh'>保險人與供給者協商一段期間的固定總額，由上而下分配（按機構或服務類別）。兩種設計：支出目標制 vs 支出上限制。誘因：總體控費 🟢；但大家在固定的餅裡搶份額——台灣的「點值」稀釋問題 🔴。</span>"><span class="fb-code">GB</span><span class="fb-name">總額預算</span><span class="fb-en">fixed pie</span></button>
+      <button class="filebox" data-note="<b>DRG / case payment 論病例計酬</b> — one bundled price per admission, classified by diagnosis, procedure, complications, age, sex, discharge status (TW-DRG's six factors). <b>Incentives:</b> shorter stays, efficiency 🟢; but upcoding, cherry-picking light cases, quicker-but-sicker discharges 🔴.<span class='zh'>每次住院一筆包裹價，依診斷、手術、併發症、年齡、性別、出院狀況分類（TW-DRG 六大因素）。誘因：縮短住院日、提升效率 🟢；但可能高報編碼、挑輕症、「更快但更病」出院 🔴。</span>"><span class="fb-code">DRG</span><span class="fb-name">論病例計酬</span><span class="fb-en">per case</span></button>
+      <button class="filebox" data-note="<b>Pay-for-performance (P4P) 論質計酬</b> — bonus payments tied to quality indicators. Taiwan runs P4P programs for diabetes, asthma, early CKD, hepatitis B/C follow-up, schizophrenia, COPD. <b>Incentives:</b> aligns money with quality 🟢; but teaching-to-the-metric and patient selection 🔴.<span class='zh'>依品質指標加碼給付。台灣的 P4P 方案涵蓋糖尿病、氣喘、初期慢性腎臟病、BC 肝追蹤、思覺失調症、COPD。誘因：讓錢與品質對齊 🟢；但可能「考什麼做什麼」、挑病人 🔴。</span>"><span class="fb-code">P4P</span><span class="fb-name">論質計酬</span><span class="fb-en">per quality</span></button>
+    </div>
+    <div class="filedetail" id="payDetail"></div>
+    <div id="cp1"></div>
+  </section>
+
+  <!-- ============ 4 ============ -->
+  <section class="unit" id="s4">
+    <div class="sec-label"><span class="sec-num">§4</span><div><h2>Taiwan Spotlight: the NHI, Warts and All</h2><p class="h2-zh">台灣視角：全民健保的光與影</p></div></div>
+    <div class="bi">
+      <p class="en">Since 1995, Taiwan's NHI has been a <b>compulsory, single-payer social insurance</b>: risk-sharing rather than risk-rated premiums, payroll-based contributions (current rate <b>5.17%</b> plus a 2.11% supplementary premium — the deck's 4.91% predates the 2021 adjustment), redistributive by design, covering basic care for over 99% of the population. Financing principles: adequacy, fairness (horizontal and vertical), neutrality, stability.</p>
+      <p class="zh">1995 年開辦的全民健保是<b>強制性、單一保險人的社會保險</b>：共同分擔風險而非依風險訂價，以薪資為基礎收費（現行費率 <b>5.17%</b>＋補充保費 2.11%——投影片的 4.91% 是 2021 年調整前的數字），制度性所得重分配，為逾 99% 人口提供基本照護。財源四原則：充足、公平（水平與垂直）、中立、穩定。</p>
+    </div>
+    <div class="acc"><button class="acc-h"><span class="acc-step">①</span> Equity report card 公平性成績單</button><div class="acc-b"><div class="bi"><p class="en">Wins: coverage 58%→99%+, catastrophic-illness patients' financial burden slashed, better resource distribution, mountain/island access programs. Warts: payroll-base design debates (base salary vs full salary), occupational-union members underpaying relative to region-insured groups.</p><p class="zh">亮點：納保率 58%→99%+、重大傷病經濟負擔大減、資源分布更公平、山地離島醫療計畫。陰影：投保薪資設計爭議（本俸 vs 全薪）、職業工會保費遠低於地區人口。</p></div></div></div>
+    <div class="acc"><button class="acc-h"><span class="acc-step">②</span> Efficiency &amp; cost control 效率與費用控制</button><div class="acc-b"><div class="bi"><p class="en">Annual medical-cost growth tamed from 15% to ~7.5%; admissions and lengths of stay controlled. But FFS still fuels waste, outpatient utilization keeps climbing, and fee-schedule/drug-price distortions persist.</p><p class="zh">醫療費用年成長率由 15% 降至約 7.5%；住院率與住院日受控。但論量計酬仍助長浪費、門診利用率持續上升、支付標準與藥價基準未盡合理。</p></div></div></div>
+    <div class="acc"><button class="acc-h"><span class="acc-step">③</span> Quality &amp; appropriateness 品質與適當性</button><div class="acc-b"><div class="bi"><p class="en">Satisfaction with outpatient and inpatient care is high and hospitals push QI programs — but uneven fee schedules distort specialty choices, review mechanisms are contested, and physician workloads stay heavy enough to cap quality gains.</p><p class="zh">門住診滿意度高、醫院普遍推 QI——但科別支付不均扭曲選科、審查制度屢有爭議、醫師服務量過大使品質難再上層樓。</p></div></div></div>
+    <div class="acc"><button class="acc-h"><span class="acc-step">④</span> Single-payer trade-offs 單一體制的取捨</button><div class="acc-b"><div class="bi"><p class="en">Pros: maximal risk pooling (law of large numbers), no adverse selection against the weak, monopsony bargaining power, low administrative costs, equal treatment across statuses, easier audit and regional planning. Cons: inflexibility of benefits and finances, hard to satisfy special needs, weak efficiency incentives in a public monopoly, and politically exposed decision making — premium hikes and payment penalties bend to politics.</p><p class="zh">優點：風險分擔效率最高（大數法則）、弱勢不被逆選擇排除、獨買議價力、行政成本低、身分別待遇一致、稽核與區域規劃容易。缺點：給付與財務缺乏彈性、難滿足特殊需求、公營獨占缺乏效率動力、決策易受政治干預——費率調整與懲處常向政治低頭。</p></div></div></div>
+    <div class="acc"><button class="acc-h"><span class="acc-step">⑤</span> The hard problems 難題清單</button><div class="acc-b"><div class="bi"><p class="en">Structural deficit as the population ages and new drugs/technology arrive; revenue and expenditure decided by separate mechanisms (weak linkage); opaque quality information for the public; drug-price squeezes discouraging new/original drugs; and the rationing question no one can dodge: should a life-saving drug costing millions enter the benefit package — at whose expense?</p><p class="zh">人口老化與新藥新科技帶來結構性收支失衡；收入與支出由不同機制決定、缺乏連動；醫療品質資訊不透明；藥價壓低造成新藥原廠藥卻步；以及誰都躲不掉的配給難題：天價救命藥該不該納入給付——排擠誰？</p></div></div></div>
+  </section>
+
+  <!-- ============ 5 ============ -->
+  <section class="unit" id="s5">
+    <div class="sec-label"><span class="sec-num">§5</span><div><h2>Week 9 Quiz</h2><p class="h2-zh">本週測驗（不計分）</p></div></div>
+    <div class="quiz-list" id="quiz"></div>
+    <div class="scorebar"><span class="stat" id="qstat">Answered 0 / 6</span><div class="bar"><div class="fill" id="qfill"></div></div><span class="score-msg" id="qmsg"></span></div>
+  </section>
+
+  <nav class="weeknav">
+    <a href="w08.html"><span class="dir">◂ Prev</span>W8 · Quality Improvement 品質改善</a>
+    <a href="w10.html" style="text-align:right"><span class="dir">Next ▸</span>W10 · Ethics &amp; Law 倫理與法律</a>
+  </nav>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© Yu-Hsiu Lin, Ph.D., National Chung Cheng University · Adapted in part from Buchbinder &amp; Shanks; Healey; 黃維民《衛生行政與健康保險》.</p>
+    <p>NHI rates and copay rules change; figures here reflect course-preparation time — always check nhi.gov.tw. 健保費率與部分負擔規定會調整，本頁數字以備課時點為準，請以健保署公告為準。</p>
+  </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+  /* ---- §1 moral hazard vs adverse selection sorter ---- */
+  initSorter("mhSorter", {
+    cats: [
+      {id:"mh", label:"Moral hazard 道德風險"},
+      {id:"as", label:"Adverse selection 逆選擇"},
+      {id:"ok", label:"Neither 都不是"}
+    ],
+    items: [
+      {en:"After getting full coverage, Mr. Chen starts visiting three different clinics for the same mild cold.", zh:"陳先生取得全額給付後，同一個小感冒跑了三家診所。", cat:"mh",
+       exp_en:"Behavior change after insurance because costs fall on others = moral hazard.", exp_zh:"投保後因成本由他人承擔而改變行為＝道德風險。"},
+      {en:"A voluntary insurance plan finds that almost all its new applicants already have chronic diseases.", zh:"自願性保險發現新申請者幾乎都已有慢性病。", cat:"as",
+       exp_en:"Those most likely to claim are the most eager to enroll — adverse selection at enrollment.", exp_zh:"最可能理賠的人最急著投保——投保端的逆選擇。"},
+      {en:"Knowing the insurer pays, a clinic recommends an extra panel of tests of marginal value.", zh:"知道有保險買單，診所建議加做一組邊際價值很低的檢查。", cat:"mh",
+       exp_en:"Provider-side moral hazard: third-party payment removes restraint (and enables supplier-induced demand).", exp_zh:"供給端的道德風險：第三方支付移除了自制（並開啟供給者誘發需求）。"},
+      {en:"A healthy young engineer skips the voluntary plan because the premium exceeds her expected use.", zh:"健康的年輕工程師因保費高於預期使用而不投保。", cat:"as",
+       exp_en:"The healthy opting out is the mirror half of adverse selection — the pool keeps worsening. Compulsory enrollment (like Taiwan's NHI) exists to stop exactly this.", exp_zh:"健康者退出是逆選擇的鏡像另一半——保險池持續惡化。強制納保（如台灣健保）正是為了阻止這件事。"},
+      {en:"An insurer charges every member of a large community the same premium regardless of health.", zh:"保險人向整個社區收取相同保費，不論健康狀況。", cat:"ok",
+       exp_en:"That's community rating — a risk-spreading design, not a market failure.", exp_zh:"這是社區費率——分散風險的設計，不是市場失靈。"},
+      {en:"With a NT$50 copay, Ms. Wang thinks twice before a marginal late-night ER visit.", zh:"有了掛號部分負擔，王小姐深夜想衝急診前多想了一下。", cat:"ok",
+       exp_en:"Cost-sharing working as intended — the antidote to moral hazard, not an instance of it.", exp_zh:"部分負擔正常發揮——是道德風險的解藥，不是案例。"}
+    ]
+  });
+
+  /* ---- §2 calculator ---- */
+  function fmt(n){ return "$" + Math.round(n).toLocaleString("en-US"); }
+  function calc(){
+    const bill  = Math.max(0, +document.getElementById("ccBill").value || 0);
+    const copay = Math.max(0, +document.getElementById("ccCopay").value || 0);
+    const ded   = Math.max(0, +document.getElementById("ccDed").value || 0);
+    const coin  = Math.min(100, Math.max(0, +document.getElementById("ccCoin").value || 0)) / 100;
+    const copayPaid = Math.min(bill, copay);
+    let rest = bill - copayPaid;
+    const dedPaid = Math.min(rest, ded);
+    rest -= dedPaid;
+    const coinPaid = rest * coin;
+    const patient = copayPaid + dedPaid + coinPaid;
+    const insurer = bill - patient;
+    const pct = bill > 0 ? patient / bill * 100 : 0;
+    document.getElementById("ccPat").textContent = fmt(patient);
+    document.getElementById("ccIns").textContent = fmt(insurer);
+    document.getElementById("ccPct").textContent = pct.toFixed(1) + "%";
+    const p = Math.max(4, Math.min(96, pct));
+    document.getElementById("ccSegP").style.width = p + "%";
+    document.getElementById("ccSegI").style.width = (100 - p) + "%";
+    document.getElementById("ccNote").innerHTML =
+      "Patient = copay " + fmt(copayPaid) + " + deductible " + fmt(dedPaid) + " + coinsurance " + fmt(coinPaid)
+      + "｜病人自付＝定額 " + fmt(copayPaid) + "＋自負額 " + fmt(dedPaid) + "＋定率 " + fmt(coinPaid)
+      + "。Try: set the bill below the deductible — the insurer pays nothing. 試試把費用調到低於自負額——保險一毛不付。";
+  }
+  ["ccBill","ccCopay","ccDed","ccCoin"].forEach(id=>{
+    document.getElementById(id).addEventListener("input", calc);
+  });
+  calc();
+
+  /* ---- §3 payment picker + checkpoint ---- */
+  initPicker("#payMap .filebox", "payDetail",
+    "<b>👈 Click a payment system</b> to see the incentives it creates.<span class='zh'>點選任一支付制度，看它創造的誘因。</span>");
+
+  initCheckpoint("cp1", {
+    en:"Under pure capitation, the riskiest predictable provider behavior a manager must monitor is…",
+    zh:"在純論人計酬下，管理者最須監控、可預期的供給者行為是……",
+    opts:["Ordering too many tests 檢查開太多","Under-providing services and avoiding sick enrollees 服務不足並迴避重症者","Extending hospital stays 拉長住院","Upcoding diagnoses 高報診斷"],
+    ans:1,
+    exp_en:"Capitation pays the same whether or not care is delivered — the incentive flips from over- to under-provision and to selecting healthy patients.",
+    exp_zh:"論人計酬做不做都領同額——誘因從過度提供翻轉為服務不足與挑健康病人。"
+  });
+
+  /* ---- §5 quiz ---- */
+  initQuiz("quiz", [
+    {en:"The dollar amount covering the insurer's overhead and profit is the…",
+     zh:"涵蓋保險人營運費用與利潤的金額稱為……",
+     opts:["Premium 保費","Deductible 自負額","Loading cost 附加費用","Copayment 定額負擔"],
+     ans:2, exp_en:"Loading cost sits on top of expected claims when pricing the premium.",
+     exp_zh:"附加費用疊在預期理賠之上，構成保費的一部分。"},
+    {en:"Employers with younger, healthier workers pay lower premiums under…",
+     zh:"雇用較年輕健康員工的雇主保費較低，這是……",
+     opts:["Community rating 社區費率","Group rating 團體費率","Global budgeting 總額預算","RBRVS"],
+     ans:1, exp_en:"Group rating spreads risk over an employer group; community rating charges everyone the same.",
+     exp_zh:"團體費率按雇主團體風險訂價；社區費率人人同價。"},
+    {en:"Supplier-induced demand is possible mainly because…",
+     zh:"供給者誘發需求之所以可能，主要因為……",
+     opts:["Patients love hospitals 病人喜歡醫院","Information asymmetry between doctor and patient 醫病資訊不對稱","Premiums are too low 保費太低","Doctors are salaried 醫師領薪水"],
+     ans:1, exp_en:"The physician knows more, and with third-party payment neither doctor nor patient faces the price — demand can exceed the social optimum.",
+     exp_zh:"醫師懂更多，加上第三方支付使醫病都不面對價格——需求可能超過社會最適。"},
+    {en:"RBRVS pays physicians based on…",
+     zh:"RBRVS 依什麼支付醫師？",
+     opts:["Patient satisfaction 病人滿意度","The resources required: work + practice expense + liability insurance 服務所需資源：工作＋執業成本＋醫責險","Seniority 年資","Number of enrollees 登錄人數"],
+     ans:1, exp_en:"A resource-based relative value for each service — adopted by Medicare in 1992 and referenced in Taiwan's fee schedule.",
+     exp_zh:"按各服務的資源相對值訂價——Medicare 1992 年採用，台灣支付標準亦引進。"},
+    {en:"Taiwan's global budget with an expenditure cap means…",
+     zh:"台灣採支出上限制的總額預算意味著……",
+     opts:["Prices are free to rise 價格可自由上漲","The annual total is fixed, so more service volume dilutes the point value 年度總額固定，量增則點值稀釋","Hospitals bill patients directly 醫院直接向病人收費","Budgets grow with volume 預算隨量成長"],
+     ans:1, exp_en:"Under a cap the pie is fixed: when total claimed points rise, each point is worth less — the famous 點值 problem.",
+     exp_zh:"上限制下餅是固定的：申報點數越多、每點越不值錢——著名的點值問題。"},
+    {en:"TW-DRGs classify each admission by six factors. Which is NOT one of them?",
+     zh:"TW-DRG 依六大因素分類住院個案，下列何者「不是」？",
+     opts:["Diagnosis 診斷","Procedure type 手術種類","Patient income 病人所得","Complications/comorbidities 併發症"],
+     ans:2, exp_en:"The six: diagnosis, procedure, complications/comorbidities, discharge status, sex, age. Income is not a grouping factor.",
+     exp_zh:"六大因素：診斷、手術、併發症、出院狀況、性別、年齡。所得不在其中。"}
+  ], {stat:"qstat", fill:"qfill", msg:"qmsg"});
+
+});
+</script>
+
+</body>
+</html>
