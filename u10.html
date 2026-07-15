@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>U10 · Ethics &amp; Law｜醫務管理</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="index.html">Healthcare Management · 醫務管理</a>
+    <nav>
+      <a href="index.html">Home 首頁</a>
+      <a href="#s1">1 Law × Ethics</a>
+      <a href="#s2">2 Four Principles</a>
+      <a href="#s3">3 Rights &amp; Duties</a>
+      <a href="#s4">4 Life's Edges</a>
+      <a href="#s5">5 IRB</a>
+      <a href="#s6">6 Quiz</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="eyebrow">Unit 10 · Module 3 品質・財務・法規</div>
+    <h1>Ethics &amp; Law</h1>
+    <p class="h1-zh">倫理與法律</p>
+    <div class="bi">
+      <p class="en lead">Legal and ethical are not synonyms: an act can be legal yet wrong, or ethical yet forbidden. Managers live in that overlap daily — consent forms, resource allocation, end-of-life policies. In this unit: the four principles that structure every bioethics argument, who owes what to whom in the provider–patient relationship, and Taiwan's own answers at the edges of life.</p>
+      <p class="zh">合法與合乎倫理不是同義詞：一件事可能合法卻不對，也可能合乎倫理卻被禁止。管理者天天活在這個交疊地帶——同意書、資源分配、臨終政策。本單元內容：支撐所有生命倫理論證的四大原則、醫病關係中誰對誰負什麼責任，以及台灣在生命兩端給出的自己的答案。</p>
+    </div>
+    <div class="chips">
+      <span class="chip">Ethics vs law 倫理與法律的分野</span>
+      <span class="chip">Four principles 醫學倫理四原則</span>
+      <span class="chip">Rights &amp; responsibilities 權利與責任</span>
+      <span class="chip">Taiwan's end-of-life laws 台灣臨終法制</span>
+    </div>
+    <p class="meta">Textbook: <b>Buchbinder &amp; Shanks Ch.15</b> + 台灣法規 | Time: <b>3 hours</b> | HW3 releases after this unit HW3 本單元後釋出</p>
+  </section>
+
+  <!-- ============ 1 ============ -->
+  <section class="unit" id="s1">
+    <div class="sec-label"><span class="sec-num">§1</span><div><h2>Legal? Ethical? Both? Neither?</h2><p class="h2-zh">合法？合倫理？都是？都不是？</p></div></div>
+    <div class="bi">
+      <p class="en"><b>Law</b> governs relationships among people, organizations and government — via legislation, regulation, and <b>common law</b> (judge-made law built on <b>precedent</b>). <b>Ethics</b> stems from family, community, and professional traditions; violating it may cost your license or your standing rather than your liberty. <b>Malpractice</b> — a professional's improper conduct through intent, carelessness or ignorance — can be civil (tort) or, with reckless disregard for safety, criminal. Sort each act into the 2×2:</p>
+      <p class="zh"><b>法律</b>規範人、組織與政府間的關係——透過立法、命令與<b>普通法</b>（以<b>判例</b>累積的法官造法）。<b>倫理</b>源自家庭、社群與專業傳統；違反的代價通常是執照或聲譽，而非自由。<b>業務過失（malpractice）</b>——專業人員因故意、疏忽或無知的不當行為——可為民事（侵權），若「罔顧他人安全」則屬刑事。把下列行為分進 2×2：</p>
+    </div>
+    <div id="leSorter"></div>
+  </section>
+
+  <!-- ============ 2 ============ -->
+  <section class="unit" id="s2">
+    <div class="sec-label"><span class="sec-num">§2</span><div><h2>The Four Principles — Case Analyzer</h2><p class="h2-zh">四大原則個案分析器</p></div></div>
+    <div class="cards2">
+      <div class="card"><h4>Respect for persons / Autonomy 尊重自主</h4><ul><li>The patient controls his or her own body; persuade, never coerce. Includes truth-telling, confidentiality, fidelity<span class="zh">病人對自己的身體有決定權；可建議、不可強迫。含誠實告知、保密、守信</span></li></ul></div>
+      <div class="card"><h4>Beneficence 行善</h4><ul><li>Do all you can to benefit this patient in this situation<span class="zh">在此情境為此病人謀取最大利益</span></li></ul></div>
+      <div class="card"><h4>Non-maleficence 不傷害</h4><ul><li>“Do no harm” — to the patient, others, or society<span class="zh">「勿傷害」——對病人、他人與社會</span></li></ul></div>
+      <div class="card"><h4>Justice 正義</h4><ul><li>Fairness in burdens, benefits, and scarce resources; uphold the law<span class="zh">負擔、利益與稀缺資源的公平分配；遵守法律</span></li></ul></div>
+    </div>
+    <div class="bi">
+      <p class="en">Each mini-case below turns primarily on one principle. Which?</p>
+      <p class="zh">下列小個案各以一個原則為核心。是哪一個？</p>
+    </div>
+    <div id="prSorter"></div>
+  </section>
+
+  <!-- ============ 3 ============ -->
+  <section class="unit" id="s3">
+    <div class="sec-label"><span class="sec-num">§3</span><div><h2>Who Owes What to Whom</h2><p class="h2-zh">誰對誰負什麼責任</p></div></div>
+    <div class="cards2">
+      <div class="card"><h4>Provider responsibilities 提供者責任</h4><ul>
+        <li>EMTALA: emergency treatment regardless of ability to pay 緊急醫療不問支付能力</li>
+        <li>Licensure &amp; malpractice law 執照與業務過失法</li>
+        <li><b>Fiduciary duty</b> — obligation to those who placed trust in you 受託義務</li></ul></div>
+      <div class="card"><h4>Provider rights 提供者權利</h4><ul>
+        <li>Fairness and dignity from employers 受公平與尊嚴對待</li>
+        <li>Protection from harassment 免受騷擾</li>
+        <li>Generally, excusal from care they disagree with (under litigation) 原則上可迴避良心牴觸之照護（爭訟中）</li></ul></div>
+      <div class="card"><h4>Patient rights 病人權利</h4><ul>
+        <li>Self-determination 自主決定</li>
+        <li>Confidentiality 資訊保密</li>
+        <li>Informed consent or competent surrogate 知情同意或適格代理人</li>
+        <li>Right to refuse care 拒絕醫療</li>
+        <li>Emergency treatment 緊急救治</li></ul></div>
+      <div class="card"><h4>Patient responsibilities 病人責任</h4><ul>
+        <li>Ask questions 提問</li>
+        <li>Provide accurate information 提供正確資訊</li>
+        <li>Attempt to follow directions and prescriptions 盡力遵循醫囑</li></ul></div>
+    </div>
+    <div id="cp1"></div>
+  </section>
+
+  <!-- ============ 4 ============ -->
+  <section class="unit" id="s4">
+    <div class="sec-label"><span class="sec-num">§4</span><div><h2>The Edges of Life — Taiwan's Answers</h2><p class="h2-zh">生命的兩端——台灣的答案</p></div></div>
+    <div class="bi">
+      <p class="en"><b>Beginning of life:</b> managers must run policies on contraception and abortion consistent with mission, values — and law. Taiwan's 優生保健法 (Genetic Health Act) Art. 9 permits induced abortion on the pregnant woman's decision under listed conditions: genetic/infectious/psychiatric disease in a spouse, hereditary disease within four degrees of kinship, medical risk to life or health, likely fetal malformation, pregnancy from rape or legally barred relations, or impact on mental health or family life.</p>
+      <p class="zh"><b>生命起點：</b>管理者執行的避孕與人工流產政策，必須同時符合使命、價值——與法律。台灣《優生保健法》第 9 條列舉得依孕婦自願施行人工流產的情形：本人或配偶患礙優生之遺傳、傳染或精神疾病；四親等內血親有礙優生之遺傳疾病；懷孕或分娩有生命或身心健康風險；胎兒有畸形發育之虞；因強制性交或依法不得結婚者相姦受孕；以及懷孕或生產將影響心理健康或家庭生活。</p>
+    </div>
+    <h3>End of life: two laws side by side <span class="zh">臨終：兩部法律對照</span></h3>
+    <div class="tabs" id="eolTabs">
+      <button class="tab sel" data-pane="tHPC">安寧緩和醫療條例 Hospice Palliative Care Act</button>
+      <button class="tab" data-pane="tPRA">病人自主權利法 Patient Right to Autonomy Act</button>
+    </div>
+    <div class="tabpanes">
+      <div class="tabpane sel" id="tHPC"><div class="bi">
+        <p class="en"><b>Scope:</b> terminal patients only. <b>Document:</b> a hospice/life-sustaining choice consent, signable by the patient <b>or family</b>. <b>May decline:</b> CPR and life-sustaining treatment; palliative care is provided. <b>No prior consultation required</b> — the form can simply be signed.</p>
+        <p class="zh"><b>適用：</b>僅限末期病人。<b>文件：</b>預立安寧緩和醫療暨維生醫療抉擇意願書，<b>本人或家屬</b>皆可簽。<b>可拒絕：</b>心肺復甦術與維生醫療；並提供安寧緩和照護。<b>不需事前諮商</b>——填寫即可。</p>
+      </div></div>
+      <div class="tabpane" id="tPRA"><div class="bi">
+        <p class="en"><b>Scope (5 conditions):</b> terminal illness, irreversible coma, permanent vegetative state, severe dementia, plus other announced conditions. <b>Document:</b> an Advance Decision (AD), signable <b>only by the person</b>, with mental capacity, <b>after a mandatory advance care planning (ACP) consultation</b>; a health care agent may be appointed. <b>May decline:</b> life-sustaining treatment (incl. CPR) <b>and artificial nutrition/hydration</b>; palliative care becomes a mandatory offering.</p>
+        <p class="zh"><b>適用（五款）：</b>末期、不可逆昏迷、永久植物人、極重度失智，及其他公告重症。<b>文件：</b>預立醫療決定（AD），<b>僅限本人</b>、心智能力健全者，且<b>須先經預立醫療照護諮商（ACP）</b>；可指定醫療委任代理人。<b>可拒絕：</b>維持生命治療（含 CPR）<b>與人工營養及流體餵養</b>；緩和醫療改為必要提供。</p>
+      </div></div>
+    </div>
+    <div class="callout good"><span class="mark">Manager's angle<br>管理者視角</span><span>
+      Your hospital must build the ACP clinic, train consultation teams, register ADs, and write escalation policies for when families disagree with a valid AD. Ethics is an operations problem too.
+      <span class="zh">醫院要開設 ACP 門診、訓練諮商團隊、註記預立醫療決定，並訂定「家屬與有效 AD 意見相左」時的處理政策。倫理同時也是營運問題。</span>
+    </span></div>
+  </section>
+
+  <!-- ============ 5 ============ -->
+  <section class="unit" id="s5">
+    <div class="sec-label"><span class="sec-num">§5</span><div><h2>IRB &amp; Why Bother</h2><p class="h2-zh">IRB 與「為何要認真」</p></div></div>
+    <div class="bi">
+      <p class="en">The <b>Institutional Review Board (IRB)</b> reviews research involving human subjects before it starts — protecting autonomy (informed consent), weighing benefit against harm, and watching justice in subject selection: the four principles running as a standing committee. And the textbook's practical reasons to take ethics seriously: resolve disputes, keep a clear conscience, keep patients' and colleagues' respect, stay efficient, reduce burnout.</p>
+      <p class="zh"><b>研究倫理審查委員會（IRB）</b>在人體研究開始前審查——保護自主（知情同意）、衡量利益與傷害、把關受試者選擇的正義：四大原則以常設委員會的形式運轉。教科書給的務實理由：化解糾紛、保持良心清明、贏得病人與同儕敬重、維持效率、減少倦怠。</p>
+    </div>
+  </section>
+
+  <!-- ============ 6 ============ -->
+  <section class="unit" id="s6">
+    <div class="sec-label"><span class="sec-num">§6</span><div><h2>Unit 10 Quiz</h2><p class="h2-zh">單元測驗（不計分）</p></div></div>
+    <div class="quiz-list" id="quiz"></div>
+    <div class="scorebar"><span class="stat" id="qstat">Answered 0 / 6</span><div class="bar"><div class="fill" id="qfill"></div></div><span class="score-msg" id="qmsg"></span></div>
+    <div class="callout" style="margin-top:22px"><span class="mark">Practice 3 + Case study<br>練習三與個案</span><span>
+      Module 3 is complete — try <a href="hw3.html">Practice 3: Quality Improvement Proposal</a> (ungraded), and start your group's <a href="project.html">case study (40%)</a>: the paper is due the week before your presentation slot.
+      <span class="zh">模組三結束——建議完成<a href="hw3.html">練習三「品質改善計畫書」</a>（不計分）；並著手小組<a href="project.html">個案報告（40%）</a>：書面須於發表前一週繳交。</span>
+    </span></div>
+  </section>
+
+  <nav class="weeknav">
+    <a href="u09.html"><span class="dir">◂ Prev</span>U9 · Financing &amp; NHI 財務與健保</a>
+    <a href="u11.html" style="text-align:right"><span class="dir">Next ▸</span>U11 · GenAI in Health Care</a>
+  </nav>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© Yu-Hsiu Lin, Ph.D., National Chung Cheng University · Adapted in part from Buchbinder &amp; Shanks, <i>Introduction to Health Care Management</i>, Ch.15, and Taiwan statutes.</p>
+    <p>Legal summaries are for teaching; consult the current statute text for practice. 法律摘要僅供教學，實務請查閱現行條文。</p>
+  </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+  /* ---- §1 legal × ethical sorter ---- */
+  initSorter("leSorter", {
+    cats: [
+      {id:"ly", label:"Legal &amp; ethical 合法且合倫理"},
+      {id:"ln", label:"Legal but unethical 合法但不合倫理"},
+      {id:"ny", label:"Illegal but arguably ethical 違法但倫理上可辯"},
+      {id:"nn", label:"Illegal &amp; unethical 違法且不倫理"}
+    ],
+    items: [
+      {en:"Obtaining written informed consent before a scheduled surgery.", zh:"排程手術前取得書面知情同意。", cat:"ly",
+       exp_en:"Required by law and central to respect for persons.", exp_zh:"法律要求，也正是尊重自主的核心。"},
+      {en:"A hospital legally raises the price of an out-of-pocket life-saving service to whatever the desperate will pay.", zh:"醫院合法地把自費救命項目價格抬到絕望者願付的上限。", cat:"ln",
+       exp_en:"Price-gouging can be perfectly legal while violating beneficence and justice — the classic 'legal but unethical' cell.", exp_zh:"哄抬可能完全合法，卻違反行善與正義——典型「合法但不合倫理」。"},
+      {en:"A physician exceeds the speed limit driving to reach a crashing patient.", zh:"醫師為趕到瀕危病人身邊而超速。", cat:"ny",
+       exp_en:"A traffic violation (illegal) undertaken to fulfill a duty of care — arguably ethical; the uncertainty zone in the 2×2.", exp_zh:"交通違規（違法）卻為履行照護義務——倫理上可辯；2×2 的模糊地帶。"},
+      {en:"Forging documentation to hide a medication error that harmed a patient.", zh:"竄改紀錄掩蓋一起造成傷害的給藥錯誤。", cat:"nn",
+       exp_en:"Fraud + concealment of harm: criminal exposure and total ethical failure — the very behavior fear-of-litigation cultures breed.", exp_zh:"偽造＋隱匿傷害：刑責加上倫理全面破產——正是「怕被告」文化養出的行為。"},
+      {en:"Reporting a colleague's suspected child abuse case to authorities as required.", zh:"依規定通報同事疑似虐童個案。", cat:"ly",
+       exp_en:"Many professionals carry a legal duty to report; ethics defines the duty of care behind it.", exp_zh:"許多專業有法定通報義務；倫理則定義背後的照護責任。"},
+      {en:"Denying a former patient's request to delete unfavorable but accurate records, per retention law.", zh:"依保存法規拒絕病人刪除「不利但真實」病歷的要求。", cat:"ly",
+       exp_en:"Record-retention law compels keeping accurate records; integrity of records is also an ethical duty (truth-telling).", exp_zh:"病歷保存是法定義務；紀錄的真實完整同時是倫理義務（誠實）。"}
+    ]
+  });
+
+  /* ---- §2 principles sorter ---- */
+  initSorter("prSorter", {
+    cats: [
+      {id:"auto", label:"Autonomy 自主"},
+      {id:"bene", label:"Beneficence 行善"},
+      {id:"nonm", label:"Non-maleficence 不傷害"},
+      {id:"just", label:"Justice 正義"}
+    ],
+    items: [
+      {en:"A competent Jehovah's Witness refuses a blood transfusion; the team documents and honors the refusal.", zh:"具决定能力的耶和華見證人拒絕輸血；團隊記錄並尊重其決定。", cat:"auto",
+       exp_en:"The patient retains control over her body even against medical advice — autonomy.", exp_zh:"即使違背醫囑，病人仍對自己身體有決定權——自主。"},
+      {en:"A surgeon completes extra simulation training before adopting a new technique on patients.", zh:"外科醫師在對病人使用新術式前先完成額外模擬訓練。", cat:"bene",
+       exp_en:"Maintaining a high level of current skill to do the most good — beneficence.", exp_zh:"維持最新最好的技術以行最大之善——行善。"},
+      {en:"Pharmacy blocks a drug because its interaction risk outweighs its marginal benefit for this patient.", zh:"藥局擋下一種藥：對此病人交互作用風險大於邊際效益。", cat:"nonm",
+       exp_en:"Refraining from an intervention whose harm exceeds benefit — do no harm.", exp_zh:"不施行弊大於利的處置——不傷害。"},
+      {en:"The ICU committee designs triage rules so the last bed goes by clinical criteria, not VIP status.", zh:"ICU 委員會訂定準則：最後一床依臨床標準分配，而非 VIP 身分。", cat:"just",
+       exp_en:"Fair distribution of a scarce resource — justice.", exp_zh:"稀缺資源的公平分配——正義。"},
+      {en:"A nurse keeps a celebrity patient's diagnosis strictly off social media and away from curious staff.", zh:"護理師嚴守名人病人的診斷，不讓好奇同事與社群媒體知悉。", cat:"auto",
+       exp_en:"Confidentiality is part of respect for persons (with truth-telling and fidelity).", exp_zh:"保密屬「尊重人」原則（與誠實、守信並列）。"},
+      {en:"Before approving a cost-saving early-discharge program, the CMO demands readmission data to ensure patients aren't harmed.", zh:"核准省成本的提早出院方案前，醫務長要求再住院數據以確認不傷害病人。", cat:"nonm",
+       exp_en:"Considering whether a decision made for other goals could harm patients — non-maleficence at the policy level.", exp_zh:"考量其他目的的決策是否傷害病人——政策層次的不傷害。"}
+    ]
+  });
+
+  /* ---- §3 checkpoint ---- */
+  initCheckpoint("cp1", {
+    en:"A hospital invests donated funds prudently and uses them as donors intended. This honors its…",
+    zh:"醫院審慎運用捐款並依捐贈者意旨使用。這履行的是……",
+    opts:["EMTALA duty 緊急醫療義務","Fiduciary duty 受託義務","Precedent 判例","Informed consent 知情同意"],
+    ans:1,
+    exp_en:"Fiduciary duty: the obligation of people or organizations to those who have placed trust in them.",
+    exp_zh:"受託義務：對「信任你的人」所負的義務。"
+  });
+
+  /* ---- §4 tabs ---- */
+  initTabs("eolTabs");
+
+  /* ---- §6 quiz ---- */
+  initQuiz("quiz", [
+    {en:"Law that depends on judicial decisions rather than legislative acts is called…",
+     zh:"依法官判決而非立法形成的法稱為……",
+     opts:["Statutory law 成文法","Common law 普通法","Administrative law 行政法","Natural law 自然法"],
+     ans:1, exp_en:"Common law is judge-made; similar cases follow precedent.",
+     exp_zh:"普通法為法官造法；類似案件依判例裁決。"},
+    {en:"Malpractice becomes a criminal matter when it involves…",
+     zh:"業務過失在何種情況下成為刑事問題？",
+     opts:["Any billing error 任何帳務錯誤","Reckless disregard for another's safety 罔顧他人安全","Patient complaints 病人投訴","Simple carelessness 單純疏忽"],
+     ans:1, exp_en:"Simple carelessness is civil (tort); reckless disregard for safety crosses into criminal law.",
+     exp_zh:"單純疏忽屬民事（侵權）；罔顧他人安全則進入刑事。"},
+    {en:"A doctor persuading — but never coercing — a hesitant patient respects which principle?",
+     zh:"醫師對猶豫的病人「說服但絕不強迫」，尊重哪個原則？",
+     opts:["Justice 正義","Beneficence 行善","Autonomy 自主","Fidelity alone 僅守信"],
+     ans:2, exp_en:"Advising is fine; actions that persuade into coercion violate the patient's right to decide for her own body.",
+     exp_zh:"建議可以；一旦跨入強迫，就侵害病人對自己身體的決定權。"},
+    {en:"Which may be declined under the Patient Right to Autonomy Act but NOT under the Hospice Palliative Care Act?",
+     zh:"下列何者可依《病主法》拒絕、但《安寧緩和條例》不行？",
+     opts:["CPR 心肺復甦術","Artificial nutrition and hydration 人工營養及流體餵養","Palliative care 緩和醫療","Blood tests 抽血"],
+     ans:1, exp_en:"The 2019 Act added artificial nutrition/hydration to what may be refused, and widened eligibility beyond terminal illness.",
+     exp_zh:"病主法把「人工營養及流體餵養」納入可拒絕範圍，適用對象也超出末期病人。"},
+    {en:"An Advance Decision (預立醫療決定) is valid only if…",
+     zh:"預立醫療決定的生效要件是……",
+     opts:["A family member signs 家屬簽名即可","Signed by the person after mandatory ACP consultation 本人於預立醫療照護諮商後簽署","Approved by the hospital director 院長核准","Notarized abroad 國外公證"],
+     ans:1, exp_en:"Only the mentally competent person may sign, and only after the required advance care planning consultation.",
+     exp_zh:"僅心智健全之本人可簽，且須先完成預立醫療照護諮商（ACP）。"},
+    {en:"The IRB institutionalizes the four principles by…",
+     zh:"IRB 將四原則制度化的方式是……",
+     opts:["Punishing researchers 懲罰研究者","Reviewing human-subject research before it begins 在人體研究開始前審查","Setting drug prices 制定藥價","Accrediting hospitals 認證醫院"],
+     ans:1, exp_en:"Prospective review checks consent (autonomy), benefit/harm balance, and fair subject selection (justice).",
+     exp_zh:"事前審查把關知情同意（自主）、利害權衡（行善／不傷害）與受試者選擇公平（正義）。"}
+  ], {stat:"qstat", fill:"qfill", msg:"qmsg"});
+
+});
+</script>
+
+</body>
+</html>

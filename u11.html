@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>U11 · GenAI in Health Care｜醫務管理</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="index.html">Healthcare Management · 醫務管理</a>
+    <nav>
+      <a href="index.html">Home 首頁</a>
+      <a href="#s1">1 What Is GenAI</a>
+      <a href="#s2">2 Use Cases</a>
+      <a href="#s3">3 Risks &amp; Cases</a>
+      <a href="#s4">4 Taiwan Law</a>
+      <a href="#s5">5 Traffic Light</a>
+      <a href="#s6">6 Quiz</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="eyebrow">Unit 11 · Module 4 新興議題與整合</div>
+    <h1>GenAI in Health Care: Uses, Ethics &amp; Law</h1>
+    <p class="h1-zh">GenAI 醫療應用與倫理法律</p>
+    <div class="bi">
+      <p class="en lead">The ChatGPT on your phone is not a medical device — it is a spectacularly fluent text-continuation machine. That single sentence separates safe use from dangerous use of generative AI in hospitals. In this unit: where GenAI genuinely helps, the six risks every health worker must be able to name, five real-world cautionary cases, Taiwan's regulatory map, and a traffic-light game that trains your judgment.</p>
+      <p class="zh">你手機上的 ChatGPT 不是醫療器材——它是一台極度流暢的「文字接龍機」。這一句話，劃開了生成式 AI 在醫院的安全用法與危險用法。本單元內容：GenAI 真正能幫上忙的場域、每位醫療工作者都該叫得出名字的六大風險、五個真實警世案例、台灣的法規地圖，以及一場訓練判斷力的紅綠燈遊戲。</p>
+    </div>
+    <div class="chips">
+      <span class="chip">GenAI vs regulated medical AI 分辨 GenAI 與醫材 AI</span>
+      <span class="chip">Name the six risks 說出六大風險</span>
+      <span class="chip">Read Taiwan's AI law map 看懂台灣法規</span>
+      <span class="chip">Apply the traffic-light rules 運用紅綠燈原則</span>
+    </div>
+    <p class="meta">Source: 自編教材（2025–26） | Time: <b>3 hours</b> | Quiz: self-check only 測驗不計分</p>
+  </section>
+
+  <!-- ============ 1 ============ -->
+  <section class="unit" id="s1">
+    <div class="sec-label"><span class="sec-num">§1</span><div><h2>A Text-Continuation Machine Is Not a Medical Device</h2><p class="h2-zh">文字接龍機不是醫療器材</p></div></div>
+    <div class="cards2">
+      <div class="card"><h4>Traditional clinical AI (CADe/CADx) 傳統臨床 AI</h4><ul>
+        <li>Classifies/detects: “suspicious lesion here” 分類判讀：「這裡疑似病灶」</li>
+        <li>Task-specific, quantifiable accuracy, clinically validated 任務專一、可量化準確率、經臨床驗證</li>
+        <li><b>Regulated as a medical device — TFDA registration required</b> 須 TFDA 查驗登記、依醫材管理</li></ul></div>
+      <div class="card"><h4>Generative AI (LLM / ChatGPT) 生成式 AI</h4><ul>
+        <li>Predicts the next most likely token 預測「下一個最可能的字」</li>
+        <li>General, fluent, persuasive — aims to <i>sound</i> right, not <i>be</i> right 通用、流暢、有說服力——目標是「聽起來合理」而非「正確」</li>
+        <li><b>Phone ChatGPT: no clinical validation, no registration, vendor warns against high-risk use</b> 手機版未經驗證、未查驗登記、開發商明示不用於高風險場域</li></ul></div>
+    </div>
+    <div class="bi">
+      <p class="en">The regulatory taxonomy of validated tools: <b>CADe</b> (detection — flags and localizes, e.g. lung nodules on CT), <b>CADx</b> (diagnosis — quantitative outputs and risk assessments), <b>CAT</b> (triage — rapid sorting, e.g. brain-bleed alerts in the ER). Taiwan's TFDA guideline for AI/ML CADe &amp; CADx (updated 2025-08) is <i>soft law</i>: the binding rule is that <b>software claiming diagnostic or therapeutic function is a medical device and must be registered</b>. In health care the most dangerous error is not the absurd one — it is the fluent, professional-sounding, wrong one, which is exactly what GenAI produces best.</p>
+      <p class="zh">已驗證工具的法規分類：<b>CADe</b>（偵測——標出病灶位置，如 CT 肺結節）、<b>CADx</b>(診斷——定量數據與風險評估）、<b>CAT</b>（檢傷——快速分流，如急診腦出血警示）。TFDA 的 AI/ML CADe/CADx 指引（2025 年 8 月修正）屬<i>軟法</i>：真正有拘束力的是——<b>宣稱診療功能的軟體即屬醫療器材、須查驗登記</b>。在醫療，最危險的錯不是明顯荒謬的錯，而是「聽起來非常專業、但其實是錯」的錯——這正是 GenAI 最擅長製造的。</p>
+    </div>
+    <div id="cp1"></div>
+  </section>
+
+  <!-- ============ 2 ============ -->
+  <section class="unit" id="s2">
+    <div class="sec-label"><span class="sec-num">§2</span><div><h2>Four Places GenAI Shows Up in a Hospital</h2><p class="h2-zh">GenAI 在醫院的四大應用場域</p></div></div>
+    <div class="cards2">
+      <div class="card"><h4>① Admin &amp; documents 行政與文書 🟢</h4><ul>
+        <li>Minutes, official letters, patient-education drafts, translation, slides 會議紀錄、公文、衛教初稿、翻譯、簡報</li>
+        <li>Most mature, lowest risk — if no identifiable data goes in and a human signs off 最成熟低風險——前提：不入個資＋人工把關</li></ul></div>
+      <div class="card"><h4>② Clinical documentation 臨床文件輔助 🟡</h4><ul>
+        <li>Ambient scribes drafting notes, discharge summaries, referral letters 環境臨床紀錄、出院摘要、轉診單草擬</li>
+        <li>Iron rule: a draft is only a draft — verify word by word before signing 鐵則：草稿永遠只是草稿，簽名前逐字確認</li></ul></div>
+      <div class="card"><h4>③ Clinical decision support 臨床決策輔助 🔴</h4><ul>
+        <li>Differential brainstorming, drug-interaction queries, literature summaries 鑑別診斷發想、用藥查詢、文獻摘要</li>
+        <li>General GenAI invents drug names, citations, doses — thinking partner, never the answer 通用 GenAI 會杜撰藥名文獻劑量——可當發想夥伴，不可當答案</li></ul></div>
+      <div class="card"><h4>④ Patient-facing 病人端與衛教 🟡</h4><ul>
+        <li>Patients WILL paste their reports into AI — you cannot stop them 病人一定會拿報告去問 AI——你擋不住</li>
+        <li>Opportunity: health literacy, 24/7 FAQs; risk: misinformation, delayed care; new job: guide correct use 機會：識能與全天候解惑；風險：錯誤資訊、延誤就醫；新功課：引導正確使用</li></ul></div>
+    </div>
+  </section>
+
+  <!-- ============ 3 ============ -->
+  <section class="unit" id="s3">
+    <div class="sec-label"><span class="sec-num">§3</span><div><h2>Six Risks, Five Real Cases</h2><p class="h2-zh">六大風險、五個真實案例</p></div></div>
+    <div class="bi">
+      <p class="en">The six risks every hospital worker should be able to name: ① <b>hallucination</b> — confident fabrication; ② <b>bias</b> — inequity learned and amplified; ③ <b>privacy</b> — data pasted into public AI leaves your control; ④ <b>autonomy</b> — patients' right to know AI took part; ⑤ <b>accountability</b> — “the AI said so” is no defense; ⑥ <b>over-reliance</b> — automation bias eroding judgment. Now the receipts:</p>
+      <p class="zh">每位醫院工作者都該叫得出的六大風險：①<b>幻覺</b>——自信地虛構；②<b>偏差</b>——把不平等學起來並放大；③<b>隱私</b>——貼進公開 AI 的資料離開掌控；④<b>自主</b>——病人有權知道 AI 參與；⑤<b>問責</b>——「AI 說的」不能免責；⑥<b>過度依賴</b>——自動化偏誤侵蝕判斷力。以下是證據：</p>
+    </div>
+    <div class="acc"><button class="acc-h"><span class="acc-step">①幻覺</span> Whisper's phantom sentences — 40 health systems 語音轉錄的幽靈句</button><div class="acc-b"><div class="bi"><p class="en">OpenAI's Whisper, embedded in the Nabla medical transcription product (30,000+ clinicians, ~40 health systems, ~7M visits), was found to fabricate sentences never spoken — including a nonexistent drug, “hyperactivated antibiotics.” Worse: the product auto-deleted source audio for privacy, destroying the audit trail. Michigan researchers found hallucinations in 8 of 10 sampled segments (an ACM FAccT study measured ~1%). Lesson: AI clinical notes are drafts until verified, and convenience must never destroy verifiability.</p><p class="zh">OpenAI Whisper 被整合進醫療轉錄產品 Nabla（逾 3 萬臨床人員、約 40 個醫療體系、約 700 萬次門診），被發現會憑空生成沒說過的句子——包括不存在的藥「hyperactivated antibiotics」。更糟：產品為隱私自動刪除原始錄音，摧毀了查核路徑。密西根研究者在 10 段抽樣中 8 段發現幻覺（ACM FAccT 研究約 1%）。教訓：AI 臨床紀錄在查核前都是草稿；方便絕不能犧牲可查核性。</p></div></div></div>
+    <div class="acc"><button class="acc-h"><span class="acc-step">①幻覺</span> Mata v. Avianca — six fake precedents 六件杜撰判例</button><div class="acc-b"><div class="bi"><p class="en">A U.S. lawyer filed six precedents supplied by ChatGPT — all fabricated; when asked, ChatGPT insisted they were real and findable on Westlaw. US$5,000 sanction (S.D.N.Y. 2023). Swap the domain: the same mechanism invents clinical guidelines, doses, and study conclusions in perfect formatting. Every fact, citation and dose must be traced to its source — AI's strength is ideation, not verification.</p><p class="zh">美國律師引用 ChatGPT 提供的六件判例——全屬虛構；律師反問時它仍堅稱屬實、可在 Westlaw 查到。法院裁罰五千美元（紐約南區，2023）。換到醫療：同一機制會以完美格式杜撰臨床指引、劑量與研究結論。每個事實、文獻、劑量都必須回查原始來源——AI 的長處是發想，不是查證。</p></div></div></div>
+    <div class="acc"><button class="acc-h"><span class="acc-step">②偏差</span> Optum's biased risk algorithm 健康風險演算法的種族偏差</button><div class="acc-b"><div class="bi"><p class="en">A U.S. risk algorithm affecting tens of millions used <i>past medical spending</i> as a proxy for health need (Science, 2019). Disadvantaged groups use less care → spend less → get scored “healthier” → miss out on extra care. Fixing the bias raised the share of Black patients receiving additional care from 17.7% to 46.5%. Ask of every tool: was it validated on <i>my</i> patient population — and what proxies hide inside it? What biases might a model trained on Taiwan's NHI data inherit?</p><p class="zh">一套影響數千萬人的美國風險演算法用「過去醫療花費」代理健康需求（Science, 2019）。弱勢族群就醫少→花費低→被判定「較健康」→更難獲得加強照護。修正後，獲加強照護的黑人病患比例由 17.7% 升至 46.5%。對每個工具都要問：它在「我的」病人族群驗證過嗎？裡面藏著什麼代理變數？用台灣健保資料訓練的模型，可能藏著我們自己的哪些偏差？</p></div></div></div>
+    <div class="acc"><button class="acc-h"><span class="acc-step">③隱私</span> Samsung's 20-day leak spree 三星二十天三起外洩</button><div class="acc-b"><div class="bi"><p class="en">Within 20 days of allowing ChatGPT in 2023, Samsung logged three confidential leaks (source code, test code, meeting transcripts) and banned GenAI company-wide. Hospital version: pasting a named patient's course into public AI to draft a discharge summary. Medical records are “special category” personal data under Taiwan's PDPA — maximum protection. De-identification is the floor, not a suggestion; identifiable data only in closed, approved environments. And is masking the name alone truly de-identification?</p><p class="zh">2023 年三星開放 ChatGPT 後 20 天內發生三起機密外洩（原始碼、測試程式、會議紀錄），隨即全面禁用。醫院版本：為趕出院摘要，把含姓名病歷號的病程貼進公開 AI。病歷屬個資法「特種個人資料」，保護最嚴。去識別化是底線而非建議；可識別資料只能在院內封閉、核可的環境處理。只遮姓名，算真正去識別化嗎？</p></div></div></div>
+    <div class="acc"><button class="acc-h"><span class="acc-step">⑤平衡</span> Ambient scribes — the benefits are real too 環境臨床紀錄的正面證據</button><div class="acc-b"><div class="bi"><p class="en">Balance matters: objective-EHR studies show AI documentation tools cut note-writing time ~20.4% per visit (10.3→8.2 min); an RCT found ~2.5 fewer after-hours documentation hours weekly and lower burnout; NEJM AI (Atrium/Wake Forest) reported 24% faster drafting and +11.3 patients/day — though system-level metrics didn't uniformly improve. With human verification, auditability, and informed consent in place, the benefits are real. Your call: which three conditions would you set before approving deployment?</p><p class="zh">平衡也重要：使用客觀病歷資料的研究顯示 AI 文件工具使每診紀錄時間降約 20.4%（10.3→8.2 分）；RCT 顯示每週減約 2.5 小時下班後文書並降低倦怠；NEJM AI（Atrium／Wake Forest）報告草擬快 24%、每日多看 11.3 位病人——但組織層級指標未一致改善。在「人工查核、可回溯、知情同意」三者到位時，效益是真實的。換你決定：核准導入前，你會設哪三個前提？</p></div></div></div>
+  </section>
+
+  <!-- ============ 4 ============ -->
+  <section class="unit" id="s4">
+    <div class="sec-label"><span class="sec-num">§4</span><div><h2>Taiwan's Regulatory Map</h2><p class="h2-zh">台灣法規地圖</p></div></div>
+    <div class="ctable-wrap"><table class="ctable">
+      <tr><th>Law / instrument 法規</th><th>Authority 主管機關</th><th>What it governs 管什麼</th><th>Key point for hospitals 醫院關鍵點</th></tr>
+      <tr><td><b>AI Basic Act 人工智慧基本法</b></td><td>NSTC 國科會</td><td>Framework principles 治理框架</td><td>Effective 2026-01-14; agencies (incl. MOHW) must review their regulations within 24 months 2026/1/14 施行；各部會兩年內檢討修法</td></tr>
+      <tr><td><b>Medical Devices Act + TFDA guidance 醫材法＋TFDA 指引</b></td><td>MOHW/TFDA 衛福部</td><td>SaMD / AI devices AI 醫材</td><td>Claiming diagnosis/treatment ⇒ registration required 宣稱診療功能須查驗登記</td></tr>
+      <tr><td><b>PDPA 個人資料保護法</b></td><td>PDPC 個資機關</td><td>Personal data 個資</td><td>Medical records = special-category data, strictest tier 病歷＝特種個資、保護最嚴</td></tr>
+      <tr><td><b>Medical Care / Physicians Acts 醫療法／醫師法</b></td><td>MOHW 衛福部</td><td>Medical practice &amp; liability 醫療行為與責任</td><td>Liability stays with the professional — AI transfers none 責任在醫事人員，AI 不轉移</td></tr>
+      <tr><td><b>Telemedicine Rules 通訊診察治療辦法</b></td><td>MOHW 衛福部</td><td>Telehealth (rev. 2024) 遠距醫療</td><td>AI-integrated telecare must comply too AI 整合遠距須一併符合</td></tr>
+    </table></div>
+    <div class="bi">
+      <p class="en">The AI Basic Act's seven principles: sustainability &amp; well-being, human autonomy, privacy &amp; data governance, security &amp; safety, transparency &amp; explainability, fairness &amp; non-discrimination, accountability. Its clock: within 6 months government AI-use risk assessments; 12 months usage rules and internal controls; 24 months every ministry reviews its statutes. Milestone already passed: Taiwan's NHI began covering its first AI medical device (anesthesia risk monitoring) at the end of 2023. The two red lines to memorize: <b>PDPA</b> — identifiable patient data into public AI is high-risk illegal processing; <b>Medical Care/Physicians Acts</b> — the tool doesn't go to court, the person using it does.</p>
+      <p class="zh">AI 基本法七大原則：永續發展與福祉、人類自主、隱私保護與資料治理、資安與安全、透明與可解釋、公平與不歧視、問責。施行時鐘：6 個月內政府完成既有 AI 使用風險評估；12 個月內訂使用規範與內控；24 個月內各部會檢討修法。已發生的里程碑：健保於 2023 年底首度給付 AI 醫材（麻醉高風險手術病人監測）。要背下來的兩條紅線：<b>個資法</b>——可識別病人資料貼進公開 AI 是高風險違法個資處理；<b>醫療法／醫師法</b>——工具不會上法庭，用工具的人會。</p>
+    </div>
+  </section>
+
+  <!-- ============ 5 ============ -->
+  <section class="unit" id="s5">
+    <div class="sec-label"><span class="sec-num">§5</span><div><h2>The Traffic-Light Game</h2><p class="h2-zh">紅綠燈遊戲</p></div></div>
+    <div class="bi">
+      <p class="en">Hospital GenAI rules in three colors — 🔴 forbidden, 🟡 allowed with verification, 🟢 encouraged. Sort each staff behavior. Then, before any real use, run the five questions: Is anything identifiable in my input? Will the output touch a patient directly? Is the tool hospital-approved? What happens if this is wrong? Should the patient be told AI took part?</p>
+      <p class="zh">院內 GenAI 三色規則——🔴 禁止、🟡 須查核、🟢 鼓勵。分類下列行為。實際使用前，先跑五個問題：輸入有可識別資訊嗎？輸出會直接用在病人身上嗎？工具是院方核可的嗎？錯了會有什麼後果？病人需要知道 AI 參與了嗎？</p>
+    </div>
+    <div id="tlSorter"></div>
+    <div class="callout good"><span class="mark">Manager's three moves<br>管理者三行動</span><span>
+      ① <b>Inventory</b> what AI tools staff actually use (more than you think). ② <b>Write policy</b> — approved-tool lists beat blanket bans, which only push use underground. ③ <b>Train</b> — AI literacy in continuing education: judgment and red lines, not prompt tricks. The future isn't AI replacing clinicians; it's clinicians who can use AI, assisting those who can't. The stronger AI gets, the more your judgment is worth.
+      <span class="zh">①<b>盤點</b>院內各單位實際在用的 AI 工具（比你想的多）。②<b>訂政策</b>——核可清單勝過一律禁止（禁止只會逼到檯面下）。③<b>做培訓</b>——把 AI 素養納入在職教育：教判斷與紅線，不是教 prompt 技巧。未來不是 AI 取代醫護，而是會用 AI 的醫護協助不太會用的。AI 越強，你的「判斷」越值錢。</span>
+    </span></div>
+  </section>
+
+  <!-- ============ 6 ============ -->
+  <section class="unit" id="s6">
+    <div class="sec-label"><span class="sec-num">§6</span><div><h2>Unit 11 Quiz</h2><p class="h2-zh">單元測驗（不計分）</p></div></div>
+    <div class="quiz-list" id="quiz"></div>
+    <div class="scorebar"><span class="stat" id="qstat">Answered 0 / 6</span><div class="bar"><div class="fill" id="qfill"></div></div><span class="score-msg" id="qmsg"></span></div>
+  </section>
+
+  <nav class="weeknav">
+    <a href="u10.html"><span class="dir">◂ Prev</span>U10 · Ethics &amp; Law 倫理與法律</a>
+    <a href="esg.html" style="text-align:right"><span class="dir">Next ▸</span>ESG in Healthcare 永續經營</a>
+  </nav>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© Yu-Hsiu Lin, Ph.D., National Chung Cheng University · Cases cited from public reporting and journals (AP; ACM FAccT 2024; Science 2019; S.D.N.Y. 2023; Bloomberg 2023; NEJM AI).</p>
+    <p>Regulatory status as of course preparation (2026); check current announcements. 法規狀態以備課時點（2026）為準，請關注最新公告。</p>
+  </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+  /* ---- §1 checkpoint ---- */
+  initCheckpoint("cp1", {
+    en:"A start-up's app claims to “detect diabetic retinopathy from fundus photos.” Under Taiwan's rules, this software…",
+    zh:"新創 App 宣稱「從眼底影像偵測糖尿病視網膜病變」。依台灣規定，這個軟體……",
+    opts:["Is just software, no rules apply 只是軟體，不受規範","Is a medical device and must be TFDA-registered 屬醫療器材，須 TFDA 查驗登記","Only needs a privacy policy 只需隱私條款","Is legal if free of charge 免費即可合法"],
+    ans:1,
+    exp_en:"Claiming detection/diagnosis of disease makes software a medical device under the Medical Devices Act — registration required. That's the exact line phone ChatGPT hasn't crossed (it claims nothing and is validated for nothing).",
+    exp_zh:"宣稱偵測／診斷疾病的軟體即屬醫材法上的醫療器材——須查驗登記。這正是手機 ChatGPT 沒有跨過的線（它什麼都不宣稱、也什麼都沒驗證）。"
+  });
+
+  /* ---- §5 traffic light sorter ---- */
+  initSorter("tlSorter", {
+    cats: [
+      {id:"r", label:"🔴 Forbidden 禁止"},
+      {id:"y", label:"🟡 Verify 須查核"},
+      {id:"g", label:"🟢 Encouraged 鼓勵"}
+    ],
+    items: [
+      {en:"Pasting a named patient's full progress notes into public ChatGPT to draft a discharge summary.", zh:"把含姓名的完整病程貼進公開 ChatGPT 草擬出院摘要。", cat:"r",
+       exp_en:"Identifiable patient data into a public/unapproved AI — red line #1 (PDPA special-category data).", exp_zh:"可識別個資進公開／未核可 AI——第一條紅線（個資法特種個資）。"},
+      {en:"Asking GenAI to draft a bilingual flu-vaccine poster, then having the ID nurse review it before printing.", zh:"請 GenAI 草擬雙語流感疫苗海報，印製前由感染管制護理師審稿。", cat:"y",
+       exp_en:"Patient-education drafts are yellow: allowed with human review before release.", exp_zh:"衛教草稿屬黃燈：允許，但發布前須人工審核。"},
+      {en:"Using GenAI to brainstorm quiz questions for your own study of this course.", zh:"用 GenAI 幫自己出這門課的複習題。", cat:"g",
+       exp_en:"Personal learning with no patient data — green: encouraged.", exp_zh:"個人學習、不涉病人資料——綠燈：鼓勵。"},
+      {en:"Copying a general GenAI's suggested antibiotic dose straight into a prescription without checking.", zh:"未經查證，把通用 GenAI 建議的抗生素劑量直接寫進處方。", cat:"r",
+       exp_en:"Adopting output for diagnosis/prescription without verification — red: general GenAI is not a registered clinical tool, and hallucinated doses sound plausible.", exp_zh:"未查核即用於診斷／處方——紅燈：通用 GenAI 非查驗登記的臨床工具，且杜撰劑量聽起來很合理。"},
+      {en:"Signing an ambient-scribe draft note after reading it word by word against your memory of the visit.", zh:"逐字核對環境紀錄草稿與診間實況後才簽署。", cat:"y",
+       exp_en:"Ambient clinical documentation is yellow: usable, but the draft is only a draft until verified and signed.", exp_zh:"環境臨床紀錄屬黃燈：可用，但草稿在逐字確認並簽署前只是草稿。"},
+      {en:"Polishing the wording of an internal shift-handover SOP that contains no patient data.", zh:"潤飾一份不含病人資料的交班 SOP 文字。", cat:"g",
+       exp_en:"Administrative writing without patient data — green.", exp_zh:"不涉病資的行政文書——綠燈。"},
+      {en:"Using an AI translation of critical discharge instructions without having anyone re-check the medical terms.", zh:"用 AI 翻譯關鍵出院指示，未經任何人複核醫療用語。", cat:"r",
+       exp_en:"Important medical communication must be re-verified; unchecked translation of critical instructions can directly harm — treat as forbidden.", exp_zh:"重要醫囑翻譯必須複核；關鍵指示未查核直接使用可能傷害病人——視為禁止。"},
+      {en:"Asking GenAI for differential-diagnosis ideas, then verifying every candidate in UpToDate and guidelines before acting.", zh:"用 GenAI 腦力激盪鑑別診斷，行動前逐一以 UpToDate 與指引查證。", cat:"y",
+       exp_en:"Thinking partner + full verification against real sources = yellow. Skipping the verification step would make it red.", exp_zh:"發想夥伴＋以真實來源逐一查證＝黃燈。若省略查證，就變紅燈。"}
+    ]
+  });
+
+  /* ---- §6 quiz ---- */
+  initQuiz("quiz", [
+    {en:"A large language model fundamentally works by…",
+     zh:"大型語言模型的根本運作方式是……",
+     opts:["Querying a medical database 查詢醫學資料庫","Predicting the statistically most likely next token 預測統計上最可能的下一個字","Logical deduction from rules 依規則邏輯推理","Consulting licensed physicians 諮詢執業醫師"],
+     ans:1, exp_en:"It is a text-continuation machine optimized to sound plausible — which is why fluent errors are its signature failure.",
+     exp_zh:"它是文字接龍機，最佳化目標是「聽起來合理」——所以「流暢的錯」是它的招牌失誤。"},
+    {en:"Which GenAI use zone is the most mature and lowest-risk?",
+     zh:"哪個 GenAI 應用場域最成熟、風險最低？",
+     opts:["Clinical decision support 臨床決策輔助","Admin &amp; documents 行政與文書","Patient self-diagnosis 病人自我診斷","Autonomous prescribing 自主開藥"],
+     ans:1, exp_en:"Minutes, letters, drafts and translation — provided no identifiable data enters and a human signs off.",
+     exp_zh:"會議紀錄、公文、草稿、翻譯——前提是不入個資且人工把關。"},
+    {en:"The Optum case showed that using past medical spending as a proxy for health need…",
+     zh:"Optum 案例顯示，用過去醫療花費代理健康需求會……",
+     opts:["Improves fairness 提升公平","Encodes existing inequity: low spenders look 'healthy' 把既有不平等寫進模型：花得少像「健康」","Has no effect 沒有影響","Only affects costs 只影響成本"],
+     ans:1, exp_en:"Disadvantaged groups use less care, so the algorithm scored them healthier; fixing it raised Black patients' extra-care share from 17.7% to 46.5%.",
+     exp_zh:"弱勢族群就醫少而被判定較健康；修正後黑人病患獲加強照護比例由 17.7% 升至 46.5%。"},
+    {en:"Under Taiwan's current law, if an AI-assisted decision harms a patient, liability falls on…",
+     zh:"依台灣現行法，AI 輔助的決策造成傷害時，責任落在……",
+     opts:["The AI vendor automatically 自動歸 AI 廠商","The medical professional who acted 執行該行為的醫事人員","No one 無人負責","The patient 病人自己"],
+     ans:1, exp_en:"Medical Care and Physicians Acts: responsibility stays with the professional — “the AI said so” is not a defense.",
+     exp_zh:"醫療法／醫師法：責任在執行的醫事人員——「AI 跟我說的」不是擋箭牌。"},
+    {en:"Taiwan's AI Basic Act takes effect on…",
+     zh:"台灣人工智慧基本法的施行日是……",
+     opts:["2024-07-01","2026-01-14","2023-12-31","2025-08-12"],
+     ans:1, exp_en:"Effective 2026-01-14; ministries including MOHW must review their statutes within 24 months. (2025-08 was the TFDA CADe/CADx guideline update.)",
+     exp_zh:"2026 年 1 月 14 日施行；含衛福部在內各部會須於 24 個月內檢討修法。（2025/8 是 TFDA CADe/CADx 指引修正。）"},
+    {en:"“The AI is right most of the time, so staff gradually stop double-checking.” This names which risk?",
+     zh:"「AI 大部分時候都對，於是大家漸漸不再查核。」這是哪個風險？",
+     opts:["Hallucination 幻覺","Privacy 隱私","Over-reliance / automation bias 過度依賴／自動化偏誤","Autonomy 自主"],
+     ans:2, exp_en:"Automation bias: we want AI-assisted professionals, not operators whose judgment has atrophied.",
+     exp_zh:"自動化偏誤：我們要的是 AI 輔助的專業人員，不是判斷力退化的操作員。"}
+  ], {stat:"qstat", fill:"qfill", msg:"qmsg"});
+
+});
+</script>
+
+</body>
+</html>

@@ -84,10 +84,10 @@ function initQuiz(containerId, QS, scoreIds){
           if(answered === QS.length && msg){
             const pct = correct / QS.length;
             msg.textContent = pct === 1
-              ? "Perfect score! 全對，你已掌握本週內容 🎓"
+              ? "Perfect score! 全對，你已掌握本單元內容 🎓"
               : pct >= 0.66
               ? "Nice work — review the sections for the ones you missed. 不錯！建議回頭複習答錯題對應的小節。"
-              : "Consider re-reading this unit before the homework. 建議寫作業前把本週單元再讀一遍。";
+              : "Consider re-reading this unit before the homework. 建議寫作業前把本單元再讀一遍。";
           }
         }
       });

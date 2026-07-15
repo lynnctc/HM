@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>U8 · Quality Improvement Basics｜醫務管理</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="index.html">Healthcare Management · 醫務管理</a>
+    <nav>
+      <a href="index.html">Home 首頁</a>
+      <a href="#s1">1 Why Quality</a>
+      <a href="#s2">2 Donabedian</a>
+      <a href="#s3">3 Measurement</a>
+      <a href="#s4">4 Approaches</a>
+      <a href="#s5">5 Tools</a>
+      <a href="#s6">6 Quiz</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="eyebrow">Unit 8 · Module 3 品質・財務・法規</div>
+    <h1>Quality Improvement Basics</h1>
+    <p class="h1-zh">品質改善</p>
+    <div class="bi">
+      <p class="en lead">“You can't manage what you can't measure.” Quality improvement turns good intentions into measured, repeatable processes: Donabedian's structure–process–outcome lens, statistical thinking about variation, and a toolbox — PDCA, FOCUS-PDCA, Six Sigma, Lean, the seven QC tools — that in this unit you will actually use on a hospital problem.</p>
+      <p class="zh">「無法測量，就無法管理。」品質改善把善意變成可測量、可重複的流程：Donabedian 的結構—過程—結果視角、看待變異的統計思維，以及一整箱工具——PDCA、FOCUS-PDCA、六標準差、精實、七大 QC 手法——本單元你會真的把它們用在一個醫院問題上。</p>
+    </div>
+    <div class="chips">
+      <span class="chip">Define quality &amp; the quality gap 定義品質與品質缺口</span>
+      <span class="chip">Apply the Donabedian model 運用 Donabedian 模型</span>
+      <span class="chip">Distinguish variation types 分辨變異類型</span>
+      <span class="chip">Use QI frameworks &amp; tools 使用 QI 框架與工具</span>
+    </div>
+    <p class="meta">Textbook: <b>Buchbinder &amp; Shanks Ch.7</b> | Time: <b>3 hours</b> | Quiz: self-check only 測驗不計分</p>
+  </section>
+
+  <!-- ============ 1 ============ -->
+  <section class="unit" id="s1">
+    <div class="sec-label"><span class="sec-num">§1</span><div><h2>Why Quality — and the Three Ways It Fails</h2><p class="h2-zh">為什麼談品質——以及它失敗的三種方式</p></div></div>
+    <div class="bi">
+      <p class="en"><b>Quality</b>: “the degree to which health services for individuals and populations increase the likelihood of desirable health outcomes and are consistent with current professional knowledge.” Two working questions: are the <i>right things</i> done (effectiveness)? and are <i>things done right</i> (efficiency)? The <b>quality gap</b> is the distance between what research says is optimal and what actually happens — evidence takes an average of <b>17 years</b> to reach routine clinical practice.</p>
+      <p class="zh"><b>品質</b>：「醫療服務提升個人與族群獲得理想健康結果的可能性、且符合當前專業知識的程度。」兩個工作問句：做的是<i>對的事</i>嗎（效果）？把事<i>做對</i>了嗎（效率）？<b>品質缺口</b>是研究上的最佳實務與實際作為之間的距離——證據平均要 <b>17 年</b>才會走進例行臨床。</p>
+    </div>
+    <div class="bi">
+      <p class="en">Quality fails in three directions. Classify the following incidents:</p>
+      <p class="zh">品質會朝三個方向失敗。分類下列事件：</p>
+    </div>
+    <div id="useSorter"></div>
+  </section>
+
+  <!-- ============ 2 ============ -->
+  <section class="unit" id="s2">
+    <div class="sec-label"><span class="sec-num">§2</span><div><h2>Donabedian: Structure → Process → Outcome</h2><p class="h2-zh">Donabedian：結構 → 過程 → 結果</p></div></div>
+    <div class="cards2">
+      <div class="card"><h4>Structure 結構</h4><ul><li>Material and human resources + the facility: staffing numbers, skill levels, certifications, accreditation<span class="zh">物力人力與設施：人力數、技能、證照、機構認證</span></li></ul></div>
+      <div class="card"><h4>Process 過程</h4><ul><li>The actual delivery and management of care: cleanliness, feeding, treatments, keeping patients safe<span class="zh">照護的實際提供與管理：清潔、餵食、治療、防跌防錯</span></li></ul></div>
+      <div class="card"><h4>Outcome 結果</h4><ul><li>Resulting status: mortality, morbidity, length of stay, function; also staff turnover, costs<span class="zh">最終狀態：死亡率、併發症、住院日、功能；亦含人員流動與成本</span></li></ul></div>
+    </div>
+    <div class="bi">
+      <p class="en">The model's logic: good structure makes good process more likely, and good process makes good outcomes more likely. Now sort these hospital metrics into S, P, or O:</p>
+      <p class="zh">模型邏輯：好結構讓好過程更可能，好過程讓好結果更可能。把下列醫院指標分進 S、P、O：</p>
+    </div>
+    <div id="spoSorter"></div>
+  </section>
+
+  <!-- ============ 3 ============ -->
+  <section class="unit" id="s3">
+    <div class="sec-label"><span class="sec-num">§3</span><div><h2>Measurement and Variation</h2><p class="h2-zh">測量與變異</p></div></div>
+    <div class="bi">
+      <p class="en">Every QI effort begins with a rigorous definition of the concept, a written metric with its unit of measure, and a method that is <b>reliable</b> (consistent across time and raters) and <b>valid</b> (actually measures the concept). Then comes variation: <b>common-cause</b> variation is the natural noise of a process — reduce it by redesigning the process; <b>special-cause</b> variation comes from unusual, infrequent events — detect and eliminate them. <b>Statistical process control (SPC)</b> charts the metric over time with control limits at ±3 standard deviations: intuitive to read, but only flags what is statistically unusual, not what is clinically acceptable.</p>
+      <p class="zh">每個 QI 專案都始於嚴謹的概念定義、含測量單位的書面指標，以及<b>信度</b>（跨時間與評分者一致）與<b>效度</b>（真的測到概念）兼具的方法。接著談變異：<b>共同原因變異</b>是流程的自然雜訊——靠重新設計流程來縮小；<b>特殊原因變異</b>來自異常、少見的事件——要偵測並排除。<b>統計製程管制（SPC）</b>把指標畫成時間序列並設 ±3 個標準差的管制界限：直觀易讀，但它只標記「統計上異常」，不代表「臨床上可接受」。</p>
+    </div>
+    <div id="cp1"></div>
+  </section>
+
+  <!-- ============ 4 ============ -->
+  <section class="unit" id="s4">
+    <div class="sec-label"><span class="sec-num">§4</span><div><h2>Three Improvement Engines</h2><p class="h2-zh">三部改善引擎</p></div></div>
+    <div class="tabs" id="engTabs">
+      <button class="tab sel" data-pane="tCQI">CQI + FOCUS-PDCA</button>
+      <button class="tab" data-pane="tSix">Six Sigma DMAIC</button>
+      <button class="tab" data-pane="tLean">Lean 精實</button>
+    </div>
+    <div class="tabpanes">
+      <div class="tabpane sel" id="tCQI"><div class="bi">
+        <p class="en"><b>Continuous quality improvement (CQI)</b>: employee teams identify and fix problems in their own work processes — continuously, not as a one-time project. Five dimensions: process focus, customer focus, data-based decisions, employee empowerment, organization-wide impact. Health care's most-used recipe is <b>FOCUS-PDCA</b> (HCA's extension of Shewhart/Deming's cycle) — walk through it in the simulator below.</p>
+        <p class="zh"><b>持續品質改善（CQI）</b>：由員工團隊找出並修復自己流程中的問題——持續進行，而非一次性專案。五個面向：流程焦點、顧客焦點、數據決策、員工賦權、全組織影響。醫療界最常用的配方是 <b>FOCUS-PDCA</b>（HCA 對 Shewhart／Deming 循環的擴充）——用下方模擬器走一遍。</p>
+      </div></div>
+      <div class="tabpane" id="tSix"><div class="bi">
+        <p class="en"><b>Six Sigma</b> is a data-driven method to eliminate variation, run as <b>DMAIC</b>: <b>D</b>efine the scope and future state → <b>M</b>easure current performance → <b>A</b>nalyze (often by flowcharting) → <b>I</b>mprove toward the defined goals → <b>C</b>ontrol so gains are permanent. Resource-intensive: serious training, dedicated time, long-term management commitment.</p>
+        <p class="zh"><b>六標準差</b>是消除變異的數據方法，依 <b>DMAIC</b> 執行：<b>定義</b>範圍與未來狀態 → <b>測量</b>現況 → <b>分析</b>（常用流程圖）→ <b>改善</b>朝目標推進 → <b>控制</b>使成果不回彈。高資源需求：紮實訓練、專責時間、長期高層承諾。</p>
+      </div></div>
+      <div class="tabpane" id="tLean"><div class="bi">
+        <p class="en"><b>Lean</b> (Toyota Production System) hunts waste: <b>overproduction</b> (unneeded pre-op bloodwork), wasted <b>motion</b> (patients and staff moving inefficiently), <b>overprocessing</b> (confusing duplicate bills), <b>defects</b> (mistakes and waiting), <b>underutilized staff</b> (NPs and PAs kept below their license). Six principles: continuous improvement attitude, value creation, unity of purpose, respect for the people who do the work, visualization, flexible regimentation.</p>
+        <p class="zh"><b>精實</b>（豐田生產系統）獵殺浪費：<b>過度生產</b>（不必要的術前抽血）、<b>移動浪費</b>（病人與人員低效移動）、<b>過度處理</b>（令人困惑的重複帳單）、<b>缺陷</b>（錯誤與等待）、<b>人力低度運用</b>（NP／PA 被用在證照以下的工作）。六原則：持續改善的態度、創造價值、目標一致、尊重做事的人、可視化、彈性紀律。</p>
+      </div></div>
+    </div>
+
+    <h3>FOCUS-PDCA simulator: the 4-hour ER wait <span class="zh">模擬器：急診等四小時問題</span></h3>
+    <div class="sim">
+      <div class="sim-head"><span class="sim-title">FOCUS-PDCA · ER wait-time project 急診等候專案</span>
+        <div class="sim-ctrl">
+          <button class="btn" id="fpPrev">◂ Prev</button>
+          <span class="stepno" id="fpNo"></span>
+          <button class="btn primary" id="fpNext">Next ▸</button>
+          <button class="btn" id="fpPlay">▶ Auto-play</button>
+          <button class="btn" id="fpReset">↻ Reset</button>
+        </div>
+      </div>
+      <div class="sim-msg" id="fpMsg"></div>
+      <div class="inspect-note" id="fpDetail"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5 ============ -->
+  <section class="unit" id="s5">
+    <div class="sec-label"><span class="sec-num">§5</span><div><h2>The Seven QC Tools</h2><p class="h2-zh">七大 QC 手法</p></div></div>
+    <div class="bi">
+      <p class="en">Click each tool to see what it does and when to reach for it.</p>
+      <p class="zh">點各工具看用途與使用時機。</p>
+    </div>
+    <div class="filemap">
+      <button class="filebox qct" data-note="<b>Flowchart 流程圖</b> — map the process step by step to see where work actually flows (and stalls). First tool in almost every project: you cannot improve what you cannot see.<span class='zh'>逐步描繪流程，看工作實際怎麼走（哪裡卡住）。幾乎每個專案的第一個工具：看不見就改不了。</span>"><span class="fb-name">Flowchart 流程圖</span><span class="fb-en">see the process</span></button>
+      <button class="filebox qct" data-note="<b>Check sheet 查檢表</b> — tally how often an event occurs (also: chart audits pulling data from medical records; geographic maps plotting events on a floor plan). Simple, immediate data collection.<span class='zh'>累記事件發生次數（延伸：病歷稽核、把事件標上平面圖的地理標記法）。最簡單直接的資料蒐集。</span>"><span class="fb-name">Check sheet 查檢表</span><span class="fb-en">count events</span></button>
+      <button class="filebox qct" data-note="<b>Cause-and-effect diagram 魚骨圖（石川圖）</b> — brainstorm causes onto branches (people, methods, machines, materials, environment) pointing at the effect. Organizes the team's hypotheses before data confirms them.<span class='zh'>把可能原因掛上魚骨（人、方法、設備、材料、環境），指向問題。先組織假說，再用數據驗證。</span>"><span class="fb-name">Fishbone 魚骨圖</span><span class="fb-en">organize causes</span></button>
+      <button class="filebox qct" data-note="<b>Pareto chart 柏拉圖</b> — bar-sort causes by frequency with a cumulative line; the 80/20 principle says a 'significant few' causes explain most of the problem. Attack those first.<span class='zh'>依頻率排序原因並畫累積線；80／20 法則：「重要少數」解釋大部分問題。先攻那幾根最高的柱子。</span>"><span class="fb-name">Pareto 柏拉圖</span><span class="fb-en">the vital few</span></button>
+      <button class="filebox qct" data-note="<b>Histogram 直方圖</b> — the distribution of a continuous measure (waiting minutes, lab turnaround). Reveals spread, skew, and whether two populations hide in one dataset.<span class='zh'>連續量測值的分布（等候分鐘、檢驗回覆時間）。看離散、偏態，以及資料裡是否藏著兩個族群。</span>"><span class="fb-name">Histogram 直方圖</span><span class="fb-en">the distribution</span></button>
+      <button class="filebox qct" data-note="<b>Scatter diagram 散布圖</b> — plot two variables to eyeball their relationship (staffing level vs fall rate). Correlation is a lead, not a verdict.<span class='zh'>兩變數作圖看關係（人力 vs 跌倒率）。相關是線索，不是判決。</span>"><span class="fb-name">Scatter 散布圖</span><span class="fb-en">two variables</span></button>
+      <button class="filebox qct" data-note="<b>Control chart 管制圖</b> — the SPC tool: metric over time with mean and ±3σ limits. Points outside the limits (or unusual runs) signal special-cause variation worth investigating.<span class='zh'>SPC 工具：指標的時間序列＋平均與 ±3σ 界限。越界點（或異常連串）提示值得調查的特殊原因變異。</span>"><span class="fb-name">Control chart 管制圖</span><span class="fb-en">variation over time</span></button>
+    </div>
+    <div class="filedetail" id="qctNote"></div>
+    <div class="callout info"><span class="mark">HIT &amp; analytics<br>資訊科技與分析</span><span>
+      Health informatics brings IT to bear on quality, efficiency and cost; analytics turns EMR, claims, pharmacy and imaging data into predictions and real-time dashboards. Your Big-Data course is the natural sequel to this unit.
+      <span class="zh">健康資訊學用資訊科技提升品質、效率並降低成本；分析學把病歷、申報、藥事與影像資料變成預測與即時儀表板。醫療大數據課程正是本單元的自然續集。</span>
+    </span></div>
+  </section>
+
+  <!-- ============ 6 ============ -->
+  <section class="unit" id="s6">
+    <div class="sec-label"><span class="sec-num">§6</span><div><h2>Unit 8 Quiz</h2><p class="h2-zh">單元測驗（不計分）</p></div></div>
+    <div class="quiz-list" id="quiz"></div>
+    <div class="scorebar"><span class="stat" id="qstat">Answered 0 / 6</span><div class="bar"><div class="fill" id="qfill"></div></div><span class="score-msg" id="qmsg"></span></div>
+  </section>
+
+  <nav class="weeknav">
+    <a href="u07.html"><span class="dir">◂ Prev</span>U7 · Public Health 公共衛生</a>
+    <a href="u09.html" style="text-align:right"><span class="dir">Next ▸</span>U9 · Financing &amp; NHI 財務與健保</a>
+  </nav>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© Yu-Hsiu Lin, Ph.D., National Chung Cheng University · Adapted in part from Buchbinder &amp; Shanks, <i>Introduction to Health Care Management</i>, Ch.7.</p>
+    <p>All cases are fictional teaching examples. 本頁個案皆為虛構教學範例。</p>
+  </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+  /* ---- §1 under/over/misuse sorter ---- */
+  initSorter("useSorter", {
+    cats: [
+      {id:"under", label:"Underuse 使用不足"},
+      {id:"over",  label:"Overuse 過度使用"},
+      {id:"mis",   label:"Misuse 誤用"}
+    ],
+    items: [
+      {en:"Only 56 of 100 seniors received the one-time pneumonia vaccine that prevents thousands of deaths a year.", zh:"每百位長者僅 56 人接種可預防大量死亡的一次性肺炎疫苗。", cat:"under",
+       exp_en:"Failing to provide a service whose benefit exceeds its risk = underuse.", exp_zh:"未提供利大於弊的服務＝使用不足。"},
+      {en:"Antibiotics prescribed for a simple viral cold.", zh:"為單純病毒性感冒開抗生素。", cat:"over",
+       exp_en:"Providing a service whose risk outweighs benefit (or adds none) = overuse.", exp_zh:"提供風險大於效益（或無效益）的服務＝過度使用。"},
+      {en:"A patient with a documented penicillin allergy receives penicillin for strep throat and breaks out in a rash.", zh:"已註記青黴素過敏的病人因鏈球菌咽炎被開青黴素，起了疹子。", cat:"mis",
+       exp_en:"The right service delivered badly, with an avoidable complication = misuse.", exp_zh:"對的服務執行錯誤、造成可避免的併發症＝誤用。"},
+      {en:"An MRI ordered although the result cannot change the treatment plan.", zh:"明知結果不會改變治療計畫仍安排 MRI。", cat:"over",
+       exp_en:"Imaging that will not alter management is unnecessary cost — overuse.", exp_zh:"不改變處置的影像檢查是不必要成本——過度使用。"},
+      {en:"An evidence-based stroke rehabilitation protocol exists but reaches only a fraction of eligible patients.", zh:"有實證的中風復健指引，卻只有少數符合條件的病人接受。", cat:"under",
+       exp_en:"Effective treatments not widely used — the 17-year evidence gap in action — underuse.", exp_zh:"有效治療未普及——17 年證據延遲的實例——使用不足。"},
+      {en:"A wrong-site surgery is caught at the last minute by the time-out check.", zh:"手術部位錯誤在最後的 time-out 查核被攔下。", cat:"mis",
+       exp_en:"A right procedure aimed at the wrong site is a classic (near-)misuse event.", exp_zh:"對的手術做錯部位——典型（虛驚）誤用事件。"}
+    ]
+  });
+
+  /* ---- §2 Donabedian sorter ---- */
+  initSorter("spoSorter", {
+    cats: [
+      {id:"s", label:"Structure 結構"},
+      {id:"p", label:"Process 過程"},
+      {id:"o", label:"Outcome 結果"}
+    ],
+    items: [
+      {en:"Nurse-to-patient ratio on the medical ward.", zh:"內科病房的護病比。", cat:"s",
+       exp_en:"Staffing numbers are a material/human resource — structure.", exp_zh:"人力配置屬物力人力資源——結構。"},
+      {en:"Percentage of surgical patients who received antibiotics within 1 hour before incision.", zh:"手術病人於劃刀前一小時內接受抗生素的比例。", cat:"p",
+       exp_en:"How care is actually delivered — process.", exp_zh:"照護實際如何執行——過程。"},
+      {en:"30-day readmission rate after heart-failure discharge.", zh:"心衰竭出院後 30 天再住院率。", cat:"o",
+       exp_en:"Resulting health status — outcome.", exp_zh:"照護後的健康狀態——結果。"},
+      {en:"The ICU's accreditation status and ventilator inventory.", zh:"加護病房的評鑑資格與呼吸器數量。", cat:"s",
+       exp_en:"Facility certification and equipment are structure.", exp_zh:"機構認證與設備屬結構。"},
+      {en:"Hand-hygiene compliance rate observed on rounds.", zh:"查房時觀察到的手部衛生遵從率。", cat:"p",
+       exp_en:"An activity performed during care delivery — process.", exp_zh:"照護過程中的行為——過程。"},
+      {en:"Nursing staff turnover rate this year.", zh:"今年護理人員離職率。", cat:"o",
+       exp_en:"Tricky! Donabedian counts organizational results — staff turnover, costs — as outcomes too.", exp_zh:"陷阱題！Donabedian 把組織面的結果——人員流動、成本——也算結果。"}
+    ]
+  });
+
+  /* ---- §3 checkpoint ---- */
+  initCheckpoint("cp1", {
+    en:"Lab turnaround times bounce mildly around 45 minutes every day — no outliers, no trend. To improve, the manager should…",
+    zh:"檢驗回覆時間每天都在 45 分鐘上下小幅波動——無離群值、無趨勢。要改善，管理者應……",
+    opts:["Find and punish the slowest technician 找出最慢的技師懲處","Redesign the process to reduce common-cause variation 重新設計流程以縮小共同原因變異","Wait for a special cause 等特殊原因出現","Loosen the control limits 放寬管制界限"],
+    ans:1,
+    exp_en:"Stable in-control variation is common-cause — built into the process. Only redesigning the process shifts it; blaming individuals is tampering.",
+    exp_zh:"穩定受控的波動是共同原因變異——內建於流程。只有重新設計流程能改變它；追究個人是亂調（tampering）。"
+  });
+
+  /* ---- §4 tabs + FOCUS-PDCA stepper ---- */
+  initTabs("engTabs");
+  const FP = [
+    {ph:"compile", k:"F · Find", en:"<b>Find</b> a high-pain process problem: patients wait a median 4.2 hours between ER triage and physician evaluation.", zh:"找出高痛點流程問題：急診檢傷到醫師診察中位數等 4.2 小時。",
+     d:"Pick problems that hurt (patients, staff, or budget) and are measurable. 'Morale is low' is a feeling; '4.2 hours' is a project.<span class='zh'>挑「會痛」且可測量的問題。「士氣低落」是感覺；「4.2 小時」是專案。</span>"},
+    {ph:"compile", k:"O · Organize", en:"<b>Organize</b> a team of people who work the process: triage nurse, ER physician, registration clerk, lab tech — and train them in QI tools.", zh:"組織在該流程中工作的團隊：檢傷護理師、急診醫師、掛號書記、檢驗technician——並訓練 QI 工具。",
+     d:"The people who live the process know where it really breaks. Training them in flowcharts and data collection is part of the step.<span class='zh'>活在流程裡的人最知道哪裡壞掉。教他們流程圖與資料蒐集也是這一步的一部分。</span>"},
+    {ph:"compile", k:"C · Clarify", en:"<b>Clarify</b> current knowledge by flowcharting the journey: triage → registration → wait → bloods → wait → imaging → wait → physician.", zh:"用流程圖釐清現況：檢傷→掛號→等→抽血→等→影像→等→醫師。",
+     d:"The flowchart exposes three separate waits nobody owned. Mapping is the cheapest diagnostic in QI.<span class='zh'>流程圖揭露三段沒人負責的等待。畫流程是 QI 裡最便宜的診斷。</span>"},
+    {ph:"compile", k:"U · Understand", en:"<b>Understand</b> variation with data: check sheets show 62% of delay sits between blood draw and results — worst on night shifts.", zh:"用數據理解變異：查檢表顯示 62% 延遲集中在抽血到報告之間——夜班最嚴重。",
+     d:"Measurement turns opinions ('registration is slow!') into facts (it wasn't). This baseline also sets the goal for the Check phase.<span class='zh'>測量把意見（「掛號很慢！」）變成事實（其實不是）。這條基線也是之後 Check 階段的比較基準。</span>"},
+    {ph:"compile", k:"S · Select", en:"<b>Select</b> the improvement: add a dedicated ER stat-lab courier at night and auto-page results to the physician's handset.", zh:"選定改善方案：夜間增設急診檢體專送人力，檢驗結果自動推播到醫師手機。",
+     d:"Choose few, high-leverage changes aimed at the vital-few cause you just measured — not ten changes at once.<span class='zh'>針對剛測出的「重要少數」原因選少數高槓桿的改變——不要一次改十件事。</span>"},
+    {ph:"exec", k:"P · Plan", en:"<b>Plan</b> the pilot: two weeks, night shifts only, courier roster set, metrics defined (draw-to-result minutes; triage-to-physician hours).", zh:"規劃試辦：為期兩週、僅夜班，排定專送班表，定義指標（抽血到報告分鐘數；檢傷到診察小時數）。",
+     d:"A pilot with dates, owners and metrics. Note we reuse the U-phase measures — that is by design.<span class='zh'>有日期、負責人與指標的試辦。指標沿用 U 階段的測量——這是刻意設計。</span>"},
+    {ph:"exec", k:"D · Do", en:"<b>Do</b> it: run the two-week pilot; log every courier run and page.", zh:"執行：跑完兩週試辦，記錄每次專送與推播。",
+     d:"Implement exactly what was planned; capture the data as you go, not from memory afterward.<span class='zh'>照計畫執行；資料隨做隨記，不要事後憑記憶。</span>"},
+    {ph:"exec", k:"C · Check", en:"<b>Check</b>: draw-to-result fell from 88 to 41 minutes; overall triage-to-physician from 4.2 to 2.9 hours. One side effect: day-shift lab grumbles about the courier budget.", zh:"查核：抽血到報告從 88 分降到 41 分；檢傷到診察從 4.2 小時降到 2.9 小時。副作用：白班檢驗抱怨專送預算。",
+     d:"Compare against the U-phase baseline using the same metrics. Also look for side effects — improvements often squeeze the balloon elsewhere.<span class='zh'>用同一組指標對比 U 階段基線，同時盯副作用——改善常把氣球擠到別處。</span>"},
+    {ph:"done", k:"A · Act", en:"<b>Act</b>: adopt the change permanently, write it into the night-shift SOP, keep the metric on the monthly dashboard — and pick the next vital-few cause. The cycle never ends.", zh:"行動：正式採納、寫入夜班 SOP、指標留在月報儀表板——然後挑下一個重要原因。循環永不結束。",
+     d:"Act = standardize and hold the gain (or abandon/adjust if Check failed). Then the C of Continuous QI: go around again.<span class='zh'>Act＝標準化並守住成果（若 Check 失敗則放棄或調整）。然後實踐 CQI 的 C：再轉一圈。</span>"}
+  ];
+  makeStepper({
+    steps: FP,
+    prev:"fpPrev", next:"fpNext", play:"fpPlay", reset:"fpReset", no:"fpNo",
+    render: function(s){
+      document.getElementById("fpMsg").innerHTML =
+        '<span class="phase '+s.ph+'">'+s.k+'</span><span>'+s.en+'<span class="zh">'+s.zh+'</span></span>';
+      document.getElementById("fpDetail").innerHTML = s.d;
+    }
+  });
+
+  /* ---- §5 QC tools picker ---- */
+  initPicker(".qct", "qctNote",
+    "<b>👈 Click a tool</b> to see what it does.<span class='zh'>點選任一工具查看用途。</span>");
+
+  /* ---- §6 quiz ---- */
+  initQuiz("quiz", [
+    {en:"“Are the right things done?” assesses ______; “are things done right?” assesses ______.",
+     zh:"「做對的事了嗎？」評估＿＿；「把事做對了嗎？」評估＿＿。",
+     opts:["Efficiency; effectiveness 效率；效果","Effectiveness; efficiency 效果；效率","Structure; outcome 結構；結果","Validity; reliability 效度；信度"],
+     ans:1, exp_en:"Effectiveness = right things (avoid underuse/overuse); efficiency = things done right (avoid waste).",
+     exp_zh:"效果＝做對的事（避免使用不足／過度）；效率＝把事做對（避免浪費）。"},
+    {en:"In the Donabedian model, hospital accreditation status is a ______ element.",
+     zh:"在 Donabedian 模型中，醫院評鑑資格屬於＿＿要素。",
+     opts:["Process 過程","Outcome 結果","Structure 結構","Special-cause 特殊原因"],
+     ans:2, exp_en:"Facility quality lies in accreditation/certification — structure.",
+     exp_zh:"設施品質展現在評鑑與認證——結構。"},
+    {en:"A single day when lab times spiked because a analyzer broke down is ______ variation.",
+     zh:"分析儀故障導致檢驗時間單日飆高，屬於＿＿變異。",
+     opts:["Common-cause 共同原因","Special-cause 特殊原因","Random 隨機","Acceptable 可接受"],
+     ans:1, exp_en:"Unusual, infrequent, identifiable events causing statistically significant deviation = special cause: find and eliminate.",
+     exp_zh:"異常、少見、可辨識的事件造成顯著偏離＝特殊原因：找到並排除。"},
+    {en:"In FOCUS-PDCA, baseline measurement happens in ______ and is compared again in ______.",
+     zh:"FOCUS-PDCA 中，基線測量發生在＿＿，並在＿＿再次比較。",
+     opts:["Find; Act","Understand; Check","Organize; Do","Clarify; Plan"],
+     ans:1, exp_en:"U documents the problem's dimensions and sets the benchmark; C studies whether the process improved using those measures.",
+     exp_zh:"U 階段記錄問題規模並建立基準；C 階段用同一組測量檢視是否改善。"},
+    {en:"Nurse practitioners doing clerical work all day would be which Lean waste?",
+     zh:"專科護理師整天做文書，屬於精實的哪種浪費？",
+     opts:["Overproduction 過度生產","Motion 移動","Underutilization of staff 人力低度運用","Overprocessing 過度處理"],
+     ans:2, exp_en:"Failing to use staff knowledge, skills and abilities optimally — the license-below-skill trap.",
+     exp_zh:"未善用員工的知識技能——把人用在證照以下的工作。"},
+    {en:"The Pareto principle tells the QI team to…",
+     zh:"柏拉圖原理告訴 QI 團隊要……",
+     opts:["Fix every cause equally 平均處理所有原因","Attack the vital few causes producing most of the problem 先攻造成多數問題的重要少數原因","Ignore rare events 忽略罕見事件","Set limits at ±3σ 設 ±3σ 界限"],
+     ans:1, exp_en:"Focus attention and resources on the small number of factors that account for most of the quality problem (80/20).",
+     exp_zh:"把注意力與資源集中在解釋大部分問題的少數因素（80／20）。"}
+  ], {stat:"qstat", fill:"qfill", msg:"qmsg"});
+
+});
+</script>
+
+</body>
+</html>
